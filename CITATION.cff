@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript."
+title: "Hybrid RL-MCDM: Entropy-Weighted TOPSIS and Tabular Q-Learning for E-Commerce Recommendation"
+authors:
+  - family-names: "Özkurt"
+    given-names: "Cem"
+    affiliation: "Sakarya University, Faculty of Computer and Information Sciences"
+    orcid: "https://orcid.org/0000-0002-1251-7715"
+    email: "cemozkurt@sakarya.edu.tr"
+  - family-names: "Çanay"
+    given-names: "Özkan"
+    affiliation: "Sakarya University, Faculty of Computer and Information Sciences"
+    orcid: "https://orcid.org/0000-0001-7539-6001"
+    email: "canay@sakarya.edu.tr"
+version: "v16"
+date-released: "2026-05-03"
+repository-code: "https://github.com/canay/hybrid-rl-mcdm"
+license: MIT
+keywords:
+  - recommender-systems
+  - reinforcement-learning
+  - q-learning
+  - topsis
+  - mcdm
+  - entropy-weighting
+  - hybrid-recommendation
+  - e-commerce
+preferred-citation:
+  type: article
+  title: "Observable and Behavioral Signal Complementarity in E-Commerce Recommendation: A Hybrid Entropy-Weighted TOPSIS and Tabular Q-Learning Framework"
+  authors:
+    - family-names: "Özkurt"
+      given-names: "Cem"
+    - family-names: "Çanay"
+      given-names: "Özkan"
+  year: 2026
+  status: "in review"

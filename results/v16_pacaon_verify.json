@@ -1,0 +1,255 @@
+{
+  "summary": {
+    "kendall_tau_mean": 1.0,
+    "kendall_tau_min": 1.0,
+    "spearman_rho_mean": 0.9999999999999999,
+    "max_score_diff_max": 0.0,
+    "max_weight_diff_max": 0.0,
+    "top7_overlap_mean": 1.0,
+    "n_seeds": 30,
+    "n_products": 400
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 1,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 2,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 3,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 4,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 5,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 6,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 7,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 8,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 9,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 10,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 11,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 12,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 13,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 14,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 15,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 16,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 17,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 18,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 19,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 20,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 21,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 22,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 23,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 24,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 25,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 26,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 27,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 28,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    },
+    {
+      "seed": 29,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999999,
+      "max_score_diff": 0.0,
+      "max_weight_diff": 0.0,
+      "top7_overlap": 1.0
+    }
+  ],
+  "verdict": "operationally identical"
+}
