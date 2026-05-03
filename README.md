@@ -12,14 +12,14 @@ here.
 
 ## Authors and contact
 
-- **Cem Özkurt** (corresponding author)
+- **Cem Özkurt** (first author)
   Department of Data Science and Analytics
   Faculty of Computer and Information Sciences, Sakarya University,
   Sakarya, Türkiye
   Email: <cemozkurt@sakarya.edu.tr>
   ORCID: [0000-0002-1251-7715](https://orcid.org/0000-0002-1251-7715)
 
-- **Özkan Çanay**
+- **Özkan Çanay** (corresponding author)
   Department of Information Systems and Technologies
   Faculty of Computer and Information Sciences, Sakarya University,
   Sakarya, Türkiye
@@ -27,7 +27,7 @@ here.
   ORCID: [0000-0001-7539-6001](https://orcid.org/0000-0001-7539-6001)
 
 For questions about the code, the synthetic data design, or the
-reproduction protocol, please contact either author by email.
+reproduction protocol, please contact the corresponding author by email.
 
 ## Repository layout
 
@@ -39,8 +39,7 @@ reproduction protocol, please contact either author by email.
 │   ├── v16_pacaon_verify.py        # Operational equivalence with the
 │   │                               # entropy-EWM-TOPSIS recommender of
 │   │                               # Pacaon and Ballera (2024)
-│   ├── v16_learned_lambda.py       # Static-vs-oracle lambda analysis
-│   └── generate_figures_v16.py     # Artifact-driven figure regeneration
+│   └── v16_learned_lambda.py       # Static-vs-oracle lambda analysis
 ├── data/
 │   ├── amazon_stratified_400.csv   # Stratified 400-product catalog seed
 │   └── v15_bootstrap/              # 30 deterministic synthetic runs
@@ -67,8 +66,6 @@ reproduction protocol, please contact either author by email.
   Pacaon and Ballera (2024) (Kendall tau = 1.000 across 30 seeds).
 - `src/v16_learned_lambda.py` — oracle-bound static-versus-learned
   lambda analysis on the existing lambda ablation grid.
-- `src/generate_figures_v16.py` — artifact-driven figure regeneration
-  for the manuscript.
 
 ## Reproducing the headline numbers
 
@@ -80,8 +77,12 @@ pip install -r requirements.txt
 python src/hybrid_rl_mcdm_v2.py          # primary + ablations + drift + CGF
 python src/v16_pacaon_verify.py          # Kendall tau verification
 python src/v16_learned_lambda.py         # static vs oracle lambda
-python src/generate_figures_v16.py       # regenerate all figures
 ```
+
+The four published figures in the manuscript are produced from the JSON
+artifacts in `results/`. The figure-generation script is part of the
+private working tree and is not redistributed here, since the figures
+themselves are part of the manuscript record.
 
 The pipeline is deterministic at the process level. Random seeds are
 recorded in every JSON artifact in `results/`. Wall-clock time on a
