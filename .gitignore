@@ -9,7 +9,7 @@ __pycache__/
 .venv/
 venv/
 
-# LaTeX build artifacts (just in case)
+# LaTeX build artifacts (defensive; manuscript is not in this repo)
 *.aux
 *.log
 *.out
