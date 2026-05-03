@@ -19,7 +19,7 @@ here.
   Email: <cemozkurt@sakarya.edu.tr>
   ORCID: [0000-0002-1251-7715](https://orcid.org/0000-0002-1251-7715)
 
-- **Özkan Çanay** (corresponding author)
+- **Özkan Canay** (corresponding author)
   Department of Information Systems and Technologies
   Faculty of Computer and Information Sciences, Sakarya University,
   Sakarya, Türkiye
