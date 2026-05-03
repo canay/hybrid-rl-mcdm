@@ -1,4 +1,4 @@
-# Hybrid RL-MCDM v16
+# Hybrid RL-MCDM
 
 Reproducibility artifact for the manuscript
 *"Observable and Behavioral Signal Complementarity in E-Commerce
@@ -34,23 +34,23 @@ reproduction protocol, please contact the corresponding author by email.
 ```
 .
 ├── src/                            # Active source code
-│   ├── hybrid_rl_mcdm_v2.py        # Main pipeline (data, primary,
+│   ├── hybrid_pipeline.py          # Main pipeline (data, primary,
 │   │                               # ablations, drift, CGF, XAI)
-│   ├── v16_pacaon_verify.py        # Operational equivalence with the
+│   ├── pacaon_verify.py            # Operational equivalence with the
 │   │                               # entropy-EWM-TOPSIS recommender of
 │   │                               # Pacaon and Ballera (2024)
-│   └── v16_learned_lambda.py       # Static-vs-oracle lambda analysis
+│   └── learned_lambda.py           # Static-vs-oracle lambda analysis
 ├── data/
 │   ├── amazon_stratified_400.csv   # Stratified 400-product catalog seed
-│   └── v15_bootstrap/              # 30 deterministic synthetic runs
+│   └── bootstrap/                  # 30 deterministic synthetic runs
 │       ├── manifest.json
 │       └── synthetic_products_run00..29_seed*.csv
 ├── results/
-│   ├── v2_full_results.json        # Primary results (main, lambda,
+│   ├── full_results.json           # Primary results (main, lambda,
 │   │                               # split, drift, CGF, ILD)
-│   ├── v2_supplementary.json       # Profile-level NDCG, reward shaping
-│   ├── v16_pacaon_verify.json      # Kendall tau across 30 seeds
-│   └── v16_learned_lambda.json     # Oracle-bound lambda summary
+│   ├── supplementary.json          # Profile-level NDCG, reward shaping
+│   ├── pacaon_verify.json          # Kendall tau across 30 seeds
+│   └── learned_lambda.json         # Oracle-bound lambda summary
 ├── requirements.txt                # Pinned package versions
 ├── CITATION.cff                    # Citation metadata
 └── README.md                       # This file
@@ -58,13 +58,13 @@ reproduction protocol, please contact the corresponding author by email.
 
 ## Active experiment files
 
-- `src/hybrid_rl_mcdm_v2.py` — full reproducible pipeline (data
+- `src/hybrid_pipeline.py` — full reproducible pipeline (data
   generation, 30-run primary bootstrap, lambda and GT-split ablations,
   concept drift, confidence-gated fusion, XAI signal decomposition).
-- `src/v16_pacaon_verify.py` — empirical verification that the
+- `src/pacaon_verify.py` — empirical verification that the
   TOPSIS-only baseline reproduces the entropy-EWM-TOPSIS recommender of
   Pacaon and Ballera (2024) (Kendall tau = 1.000 across 30 seeds).
-- `src/v16_learned_lambda.py` — oracle-bound static-versus-learned
+- `src/learned_lambda.py` — oracle-bound static-versus-learned
   lambda analysis on the existing lambda ablation grid.
 
 ## Reproducing the headline numbers
@@ -74,9 +74,9 @@ All scripts assume Python 3.12+ with the dependencies pinned in
 
 ```bash
 pip install -r requirements.txt
-python src/hybrid_rl_mcdm_v2.py          # primary + ablations + drift + CGF
-python src/v16_pacaon_verify.py          # Kendall tau verification
-python src/v16_learned_lambda.py         # static vs oracle lambda
+python src/hybrid_pipeline.py            # primary + ablations + drift + CGF
+python src/pacaon_verify.py              # Kendall tau verification
+python src/learned_lambda.py             # static vs oracle lambda
 ```
 
 The four published figures in the manuscript are produced from the JSON
