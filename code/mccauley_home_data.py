@@ -209,10 +209,10 @@ def build_user_payloads(selected_sequences: dict[str, list[dict]], item_table: p
     item_lookup = item_table.set_index("asin", drop=False)
     payloads = []
 
-    for user_id, rows in selected_sequences.items():
+    for idx, (_, rows) in enumerate(selected_sequences.items()):
         payloads.append(
             {
-                "user_id": user_id,
+                "user_id": f"user_{idx:04d}",
                 "n_unique_items": len(rows),
                 "train": [
                     {
@@ -253,6 +253,7 @@ def save_outputs(item_table: pd.DataFrame, user_payloads: list[dict], max_users:
         "min_unique_items": int(min_unique_items),
         "max_users": int(max_users),
         "min_positive_rating": float(MIN_POSITIVE_RATING),
+        "privacy_publication_note": "Public user identifiers are anonymized; raw reviewerID values are not written to the processed user file.",
     }
     with MANIFEST_PATH.open("w", encoding="utf-8") as handle:
         json.dump(manifest, handle, indent=2)

@@ -12,8 +12,10 @@ venv/
 # Private/local raw datasets are intentionally excluded from the public package
 data/raw/
 
-# Manuscript sources are maintained in the private working directory
+# Private working artifacts are intentionally excluded from the public package
 manuscript/
+docs/
+logs/
 
 # Editor / OS
 .DS_Store

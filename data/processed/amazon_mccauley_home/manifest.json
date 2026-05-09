@@ -7,5 +7,6 @@
   "test_k": 7,
   "min_unique_items": 25,
   "max_users": 1000,
-  "min_positive_rating": 4.0
+  "min_positive_rating": 4.0,
+  "privacy_publication_note": "Public user identifiers are anonymized; raw reviewerID values are not written to the processed user file."
 }

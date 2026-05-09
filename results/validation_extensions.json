@@ -9,7 +9,7 @@
     ],
     "linucb_alpha": 0.6,
     "top_k": 7,
-    "note": "Additional reviewer-facing validation experiments; primary claims remain based on amazon_primary.json."
+    "note": "Additional validation experiments; primary claims remain based on amazon_primary.json."
   },
   "linucb_baseline": {
     "runs": 30,
@@ -3223,3 +3223,4 @@
   },
   "runtime_seconds": 835.5102322999155
 }
+

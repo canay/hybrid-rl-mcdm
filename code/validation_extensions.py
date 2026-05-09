@@ -1,6 +1,6 @@
-﻿"""Additional Hybrid RL-TOPSIS validation experiments requested before submission.
+﻿"""Additional Hybrid RL-TOPSIS validation experiments.
 
-The script adds three checks that are useful for Q1-style reviewer questions:
+The script adds three robustness checks:
 
 1. LinUCB as a lightweight CF-free contextual-bandit baseline.
 2. Catalog-size sensitivity for the tabular policy.
@@ -528,7 +528,7 @@ def run_all(runs: int, size_runs: int, sizes: Sequence[int]) -> dict:
             "catalog_sizes": [int(x) for x in sizes],
             "linucb_alpha": 0.60,
             "top_k": TOP_K,
-            "note": "Additional reviewer-facing validation experiments; primary claims remain based on amazon_primary.json.",
+            "note": "Additional validation experiments; primary claims remain based on amazon_primary.json.",
         },
         "linucb_baseline": run_linucb_baseline(runs),
         "catalog_size_sensitivity": run_catalog_size_sensitivity(size_runs, sizes),
@@ -571,4 +571,5 @@ def main(argv: Sequence[str] | None = None) -> None:
 
 if __name__ == "__main__":
     main()
+
 

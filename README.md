@@ -3,21 +3,19 @@
 Public reproducibility artifact for the Hybrid RL-TOPSIS e-commerce
 recommendation study.
 
-This repository contains the code, processed datasets, logs, and result
-artifacts needed to inspect the reported experiments. Raw review files are not
-included in the public package because they may contain reviewer-level text,
-identifiers, names, and external links. To fully regenerate raw-derived
-artifacts, obtain the source datasets separately and place them under
-`data/raw/` using the paths documented in `docs/RUN_EXPERIMENTS.md`.
-
-## Repository Layout
+The repository is intentionally limited to files needed by researchers who want
+to inspect or rerun the experiments:
 
 - `code/`: experiment, benchmark, validation, and XAI scripts
-- `scripts/`: PowerShell wrappers for the main experiment suite
-- `data/processed/`: shareable enriched catalogs and external-validation files
-- `results/`: JSON/CSV outputs used by the manuscript
-- `logs/`: run logs and runtime summaries
-- `docs/`: dataset decision, runbook, manuscript audit, and reviewer audit
+- `scripts/`: PowerShell wrappers for common runs
+- `data/processed/`: shareable processed datasets used by the experiments
+- `results/`: JSON/CSV outputs reported by the study
+- `requirements.txt`: Python dependencies used in the experiments
+
+Raw review files, manuscript drafts, internal audit notes, and local run logs
+are not included. The processed Amazon India catalogs exclude raw reviewer IDs,
+reviewer names, review IDs, review text, image links, and product links. The
+processed McAuley user file uses anonymized user identifiers.
 
 ## Main Evidence Snapshot
 
@@ -27,7 +25,7 @@ artifacts, obtain the source datasets separately and place them under
 - Popularity F1@7: 0.1531
 - Random F1@7: 0.0200
 - Drift final F1@7: Hybrid 0.8274 versus RL-only 0.5663
-- LinUCB additional validation: 0.0971 versus Hybrid 0.9019
+- LinUCB validation: 0.0971 versus Hybrid 0.9019
 - Catalog-size sensitivity: Hybrid remains strong at 200, 400, and 800 items
 - Real SHAP surrogate audit: RF surrogate R2 = 0.6404; top drivers are
   `quality_pct`, `price_pct`, and `review_text_richness`
@@ -58,13 +56,33 @@ Run the SHAP explainability audit:
 python code\xai_analysis.py --max-runs 50 --shap-sample 5000
 ```
 
-The sparse reviewer-product benchmark requires the raw Amazon India CSV because
-it reconstructs reviewer-product associations. The McAuley and deep benchmark
-scripts can be run from the included processed McAuley artifacts.
+Run additional validation checks:
 
-## Notes
+```powershell
+python code\validation_extensions.py --runs 30 --size-runs 30 --sizes 200 400 800
+```
 
-The work is positioned as CF-free, criterion-rich decision support rather than
-a universal replacement for collaborative filtering. The included CF, graph,
-deep, and external-validation checks are used to delimit the method's operating
-regime honestly.
+The sparse reviewer-product benchmark requires the original Amazon India CSV
+because it reconstructs reviewer-product associations from the raw file. Place
+that file at `data/raw/amazon_india.csv` before running:
+
+```powershell
+python code\benchmark_recommenders.py --runs 30 --min-items 3 --factors 32 --epochs 80
+```
+
+To rebuild the McAuley processed files from scratch, place
+`meta_Home_and_Kitchen.json.gz` and `reviews_Home_and_Kitchen_5.json.gz` under
+`data/raw/amazon_mccauley_home/`, then run:
+
+```powershell
+python code\mccauley_home_data.py --max-users 1000 --min-unique-items 25
+python code\mccauley_home_experiment.py
+```
+
+## Scope
+
+The method is positioned as CF-free, criterion-rich decision support rather
+than a universal replacement for collaborative filtering. The included
+collaborative, graph, deep, and external-validation checks delimit where the
+method is appropriate and where interaction-rich recommenders should be
+preferred.
