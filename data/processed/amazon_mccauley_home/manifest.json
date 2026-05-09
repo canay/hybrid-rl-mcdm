@@ -1,0 +1,11 @@
+{
+  "source": "Amazon productGraph 2014 / Home and Kitchen 5-core",
+  "raw_meta": "data\\raw\\amazon_mccauley_home\\meta_Home_and_Kitchen.json.gz",
+  "raw_reviews": "data\\raw\\amazon_mccauley_home\\reviews_Home_and_Kitchen_5.json.gz",
+  "n_items": 11287,
+  "n_users": 808,
+  "test_k": 7,
+  "min_unique_items": 25,
+  "max_users": 1000,
+  "min_positive_rating": 4.0
+}

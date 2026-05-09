@@ -1,0 +1,78 @@
+{
+  "source": "results\\amazon_primary.json",
+  "checkpoint": "30000",
+  "unit_of_analysis": "run-level mean F1@7 averaged across five profiles",
+  "baselines": [
+    "random",
+    "popularity",
+    "topsis_only",
+    "rl_only"
+  ],
+  "bonferroni_alpha": 0.0125,
+  "pairs": {
+    "random": {
+      "mean_hybrid": 0.9005714285714284,
+      "mean_baseline": 0.02,
+      "mean_diff": 0.8805714285714283,
+      "median_diff": 0.8857142857142857,
+      "std_diff": 0.05374442427227392,
+      "cohen_dz": 16.384423882008246,
+      "paired_t_stat": 115.85537232802848,
+      "paired_t_p_two_sided": 1.9702687117560928e-61,
+      "wilcoxon_stat": 1275.0,
+      "wilcoxon_p_one_sided_greater": 3.506583951793994e-10,
+      "wins": 50,
+      "ties": 0,
+      "losses": 0,
+      "n": 50
+    },
+    "popularity": {
+      "mean_hybrid": 0.9005714285714284,
+      "mean_baseline": 0.15314285714285714,
+      "mean_diff": 0.7474285714285713,
+      "median_diff": 0.7428571428571429,
+      "std_diff": 0.08431511075053294,
+      "cohen_dz": 8.864704852728275,
+      "paired_t_stat": 62.682929145814576,
+      "paired_t_p_two_sided": 1.8829043182976996e-48,
+      "wilcoxon_stat": 1275.0,
+      "wilcoxon_p_one_sided_greater": 3.6680187202070284e-10,
+      "wins": 50,
+      "ties": 0,
+      "losses": 0,
+      "n": 50
+    },
+    "topsis_only": {
+      "mean_hybrid": 0.9005714285714284,
+      "mean_baseline": 0.2594285714285714,
+      "mean_diff": 0.6411428571428571,
+      "median_diff": 0.6285714285714286,
+      "std_diff": 0.06431907135866843,
+      "cohen_dz": 9.968160976199306,
+      "paired_t_stat": 70.48554222229646,
+      "paired_t_p_two_sided": 6.384813268795918e-51,
+      "wilcoxon_stat": 1275.0,
+      "wilcoxon_p_one_sided_greater": 3.583225566656842e-10,
+      "wins": 50,
+      "ties": 0,
+      "losses": 0,
+      "n": 50
+    },
+    "rl_only": {
+      "mean_hybrid": 0.9005714285714284,
+      "mean_baseline": 0.5742857142857143,
+      "mean_diff": 0.32628571428571435,
+      "median_diff": 0.3142857142857143,
+      "std_diff": 0.06378065285388121,
+      "cohen_dz": 5.115747482755016,
+      "paired_t_stat": 36.173797358940824,
+      "paired_t_p_two_sided": 5.243568304568082e-37,
+      "wilcoxon_stat": 1275.0,
+      "wilcoxon_p_one_sided_greater": 3.5548158315771066e-10,
+      "wins": 50,
+      "ties": 0,
+      "losses": 0,
+      "n": 50
+    }
+  }
+}

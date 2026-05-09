@@ -1,0 +1,29 @@
+{
+  "dataset_version": "hybrid_rl_topsis_amazon_india_enriched",
+  "source_manifest": "data\\processed\\manifest.json",
+  "primary_f1_at_30000": {
+    "random": 0.02,
+    "popularity": 0.15314285714285714,
+    "topsis_only": 0.2594285714285714,
+    "rl_only": 0.5742857142857143,
+    "hybrid": 0.9005714285714284
+  },
+  "hybrid_minus_topsis": 0.641142857142857,
+  "hybrid_minus_rl": 0.32628571428571407,
+  "best_lambda_q": 0.45,
+  "best_lambda_q_mean_f1": 0.9074285714285714,
+  "robustness_bonus_0_20": {
+    "hybrid": 0.9005714285714284,
+    "rl_only": 0.5742857142857143
+  },
+  "drift_f1_at_30000": {
+    "rl_only": 0.5662857142857143,
+    "hybrid": 0.8274285714285715
+  },
+  "outputs": {
+    "primary": "results\\amazon_primary.json",
+    "extended": "results\\amazon_extended.json",
+    "robustness": "results\\amazon_robustness.json",
+    "drift": "results\\amazon_drift.json"
+  }
+}

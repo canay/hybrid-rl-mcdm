@@ -1,106 +1,70 @@
-# Hybrid RL-MCDM
+# Hybrid RL-TOPSIS Research Package
 
-Reproducibility artifact for the manuscript
-*"Observable and Behavioral Signal Complementarity in E-Commerce
-Recommendation: A Hybrid Entropy-Weighted TOPSIS and Tabular Q-Learning
-Framework"* (under review at Expert Systems with Applications).
+Public reproducibility artifact for the Hybrid RL-TOPSIS e-commerce
+recommendation study.
 
-This repository contains the code, synthetic data, and result artifacts
-needed to reproduce every empirical claim in the paper. The manuscript
-itself is published through the journal of record and is not mirrored
-here.
+This repository contains the code, processed datasets, logs, and result
+artifacts needed to inspect the reported experiments. Raw review files are not
+included in the public package because they may contain reviewer-level text,
+identifiers, names, and external links. To fully regenerate raw-derived
+artifacts, obtain the source datasets separately and place them under
+`data/raw/` using the paths documented in `docs/RUN_EXPERIMENTS.md`.
 
-## Authors and contact
+## Repository Layout
 
-- **Cem Özkurt** (first author)
-  Department of Data Science and Analytics
-  Faculty of Computer and Information Sciences, Sakarya University,
-  Sakarya, Türkiye
-  Email: <cemozkurt@sakarya.edu.tr>
-  ORCID: [0000-0002-1251-7715](https://orcid.org/0000-0002-1251-7715)
+- `code/`: experiment, benchmark, validation, and XAI scripts
+- `scripts/`: PowerShell wrappers for the main experiment suite
+- `data/processed/`: shareable enriched catalogs and external-validation files
+- `results/`: JSON/CSV outputs used by the manuscript
+- `logs/`: run logs and runtime summaries
+- `docs/`: dataset decision, runbook, manuscript audit, and reviewer audit
 
-- **Özkan Canay** (corresponding author)
-  Department of Information Systems and Technologies
-  Faculty of Computer and Information Sciences, Sakarya University,
-  Sakarya, Türkiye
-  Email: <canay@sakarya.edu.tr>
-  ORCID: [0000-0001-7539-6001](https://orcid.org/0000-0001-7539-6001)
+## Main Evidence Snapshot
 
-For questions about the code, the synthetic data design, or the
-reproduction protocol, please contact the corresponding author by email.
+- Hybrid F1@7: 0.9006
+- RL-only F1@7: 0.5743
+- TOPSIS-only F1@7: 0.2594
+- Popularity F1@7: 0.1531
+- Random F1@7: 0.0200
+- Drift final F1@7: Hybrid 0.8274 versus RL-only 0.5663
+- LinUCB additional validation: 0.0971 versus Hybrid 0.9019
+- Catalog-size sensitivity: Hybrid remains strong at 200, 400, and 800 items
+- Real SHAP surrogate audit: RF surrogate R2 = 0.6404; top drivers are
+  `quality_pct`, `price_pct`, and `review_text_richness`
 
-## Repository layout
+## Reproducing From Included Processed Artifacts
 
-```
-.
-├── src/                            # Active source code
-│   ├── hybrid_pipeline.py          # Main pipeline (data, primary,
-│   │                               # ablations, drift, CGF, XAI)
-│   ├── pacaon_verify.py            # Operational equivalence with the
-│   │                               # entropy-EWM-TOPSIS recommender of
-│   │                               # Pacaon and Ballera (2024)
-│   └── learned_lambda.py           # Static-vs-oracle lambda analysis
-├── data/
-│   ├── amazon_stratified_400.csv   # Stratified 400-product catalog seed
-│   └── bootstrap/                  # 30 deterministic synthetic runs
-│       ├── manifest.json
-│       └── synthetic_products_run00..29_seed*.csv
-├── results/
-│   ├── full_results.json           # Primary results (main, lambda,
-│   │                               # split, drift, CGF, ILD)
-│   ├── supplementary.json          # Profile-level NDCG, reward shaping
-│   ├── pacaon_verify.json          # Kendall tau across 30 seeds
-│   └── learned_lambda.json         # Oracle-bound lambda summary
-├── requirements.txt                # Pinned package versions
-├── CITATION.cff                    # Citation metadata
-└── README.md                       # This file
+Install dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
 ```
 
-## Active experiment files
+Run the primary experiment from the included processed bootstrap catalogs:
 
-- `src/hybrid_pipeline.py` — full reproducible pipeline (data
-  generation, 30-run primary bootstrap, lambda and GT-split ablations,
-  concept drift, confidence-gated fusion, XAI signal decomposition).
-- `src/pacaon_verify.py` — empirical verification that the
-  TOPSIS-only baseline reproduces the entropy-EWM-TOPSIS recommender of
-  Pacaon and Ballera (2024) (Kendall tau = 1.000 across 30 seeds).
-- `src/learned_lambda.py` — oracle-bound static-versus-learned
-  lambda analysis on the existing lambda ablation grid.
-
-## Reproducing the headline numbers
-
-All scripts assume Python 3.12+ with the dependencies pinned in
-`requirements.txt`. From the repository root:
-
-```bash
-pip install -r requirements.txt
-python src/hybrid_pipeline.py            # primary + ablations + drift + CGF
-python src/pacaon_verify.py              # Kendall tau verification
-python src/learned_lambda.py             # static vs oracle lambda
+```powershell
+python code\run_amazon_experiments.py --runs 50 --drift-runs 50
 ```
 
-The four published figures in the manuscript are produced from the JSON
-artifacts in `results/`. The figure-generation script is part of the
-private working tree and is not redistributed here, since the figures
-themselves are part of the manuscript record.
+Run the statistical audit from the stored primary output:
 
-The pipeline is deterministic at the process level. Random seeds are
-recorded in every JSON artifact in `results/`. Wall-clock time on a
-single CPU-only workstation (12th-generation Intel Core i5-12500,
-15.7 GB RAM): approximately 48 minutes for the full pipeline.
+```powershell
+python code\statistical_audit.py
+```
 
-## Citing this artifact
+Run the SHAP explainability audit:
 
-Please cite the published manuscript when using this code or data. A
-citable software release will be tagged on acceptance; until then,
-reference the repository commit hash. Citation metadata is available in
-`CITATION.cff`.
+```powershell
+python code\xai_analysis.py --max-runs 50 --shap-sample 5000
+```
 
-## License
+The sparse reviewer-product benchmark requires the raw Amazon India CSV because
+it reconstructs reviewer-product associations. The McAuley and deep benchmark
+scripts can be run from the included processed McAuley artifacts.
 
-Code: MIT. Synthetic data: CC BY 4.0.
+## Notes
 
-## Acknowledgements
-
-This research did not receive any specific grant from funding agencies
-in the public, commercial, or not-for-profit sectors.
+The work is positioned as CF-free, criterion-rich decision support rather than
+a universal replacement for collaborative filtering. The included CF, graph,
+deep, and external-validation checks are used to delimit the method's operating
+regime honestly.

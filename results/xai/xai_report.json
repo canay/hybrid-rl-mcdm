@@ -1,0 +1,184 @@
+{
+  "diagnostics": {
+    "n_rows": 100000,
+    "n_features": 9,
+    "ridge_r2_test": 0.6259106925621776,
+    "random_forest_r2_test": 0.6403546626412244,
+    "shap_version": "0.49.1",
+    "shap_sample_rows": 5000,
+    "target": "final hybrid score from the trained RL-TOPSIS policy",
+    "surrogate_note": "Random forest surrogate is used for TreeExplainer SHAP and permutation importance. Standardized ridge is retained as a linear sanity-check surrogate."
+  },
+  "branch_summary": {
+    "all_items": {
+      "mean_q_component": 0.02109007270387422,
+      "mean_topsis_component": 0.24928079626701688,
+      "q_dominant_share": 0.03877
+    },
+    "hybrid_top7_items": {
+      "mean_q_component": 0.343450897490242,
+      "mean_topsis_component": 0.40454141183343484,
+      "q_dominant_share": 0.28914285714285715,
+      "gt_hit_share": 0.9005714285714286
+    }
+  },
+  "global_importance_top": [
+    {
+      "feature": "quality_pct",
+      "mean_abs_shap": 0.06661590276466,
+      "ridge_coefficient": 0.03749746682929806,
+      "ridge_abs_coefficient": 0.03749746682929806,
+      "rf_impurity_importance": 0.598041367006382,
+      "rf_permutation_importance_mean": 0.8350173865685756,
+      "rf_permutation_importance_std": 0.006076799222410752,
+      "feature_mean": 0.50125,
+      "feature_std": 0.28867532133334756,
+      "scaler_mean": 0.5007309166666667,
+      "scaler_scale": 0.288715312184846
+    },
+    {
+      "feature": "price_pct",
+      "mean_abs_shap": 0.04511502058003655,
+      "ridge_coefficient": 0.04604665908001494,
+      "ridge_abs_coefficient": 0.04604665908001494,
+      "rf_impurity_importance": 0.2505061041690861,
+      "rf_permutation_importance_mean": 0.321014282255988,
+      "rf_permutation_importance_std": 0.0035071998122128112,
+      "feature_mean": 0.49875,
+      "feature_std": 0.2886516576217682,
+      "scaler_mean": 0.49817686666666666,
+      "scaler_scale": 0.28846375873151825
+    },
+    {
+      "feature": "review_text_richness",
+      "mean_abs_shap": 0.012078346110226689,
+      "ridge_coefficient": -0.0008762769320005862,
+      "ridge_abs_coefficient": 0.0008762769320005862,
+      "rf_impurity_importance": 0.04189802498370037,
+      "rf_permutation_importance_mean": 0.0381980922607437,
+      "rf_permutation_importance_std": 0.0007760966153305034,
+      "feature_mean": 1589.7341,
+      "feature_std": 453.7916016910931,
+      "scaler_mean": 1589.8074533333333,
+      "scaler_scale": 453.68979367601065
+    },
+    {
+      "feature": "rating_pct",
+      "mean_abs_shap": 0.006627721322272676,
+      "ridge_coefficient": 0.04040590974638147,
+      "ridge_abs_coefficient": 0.04040590974638147,
+      "rf_impurity_importance": 0.027998566572161553,
+      "rf_permutation_importance_mean": 0.002149990224573095,
+      "rf_permutation_importance_std": 0.0011330152539457134,
+      "feature_mean": 0.50125,
+      "feature_std": 0.28668145729420585,
+      "scaler_mean": 0.5009849166666667,
+      "scaler_scale": 0.2869790135358212
+    },
+    {
+      "feature": "rating_count",
+      "mean_abs_shap": 0.005071306336366573,
+      "ridge_coefficient": 0.00446224220845197,
+      "ridge_abs_coefficient": 0.00446224220845197,
+      "rf_impurity_importance": 0.01798834015888356,
+      "rf_permutation_importance_mean": 0.010092173019334016,
+      "rf_permutation_importance_std": 0.0004462376997498757,
+      "feature_mean": 13852.62365,
+      "feature_std": 36320.34073833317,
+      "scaler_mean": 13869.93804,
+      "scaler_scale": 36379.64037608712
+    },
+    {
+      "feature": "discount_pct",
+      "mean_abs_shap": 0.0046315398632100265,
+      "ridge_coefficient": -0.005998329306801552,
+      "ridge_abs_coefficient": 0.005998329306801552,
+      "rf_impurity_importance": 0.014444771410872824,
+      "rf_permutation_importance_mean": 0.01398171538675751,
+      "rf_permutation_importance_std": 0.0006171693578957717,
+      "feature_mean": 46.03355,
+      "feature_std": 21.647727609118846,
+      "scaler_mean": 46.02113333333333,
+      "scaler_scale": 21.60789038095935
+    },
+    {
+      "feature": "popularity_pct",
+      "mean_abs_shap": 0.0041263861564061624,
+      "ridge_coefficient": 0.03969307631583995,
+      "ridge_abs_coefficient": 0.03969307631583995,
+      "rf_impurity_importance": 0.021522292848752178,
+      "rf_permutation_importance_mean": -0.0053084318888755085,
+      "rf_permutation_importance_std": 0.00031955786873298105,
+      "feature_mean": 0.50125,
+      "feature_std": 0.2886744409548213,
+      "scaler_mean": 0.5009489833333334,
+      "scaler_scale": 0.2890307293953356
+    },
+    {
+      "feature": "recency_pct",
+      "mean_abs_shap": 0.00387729450081274,
+      "ridge_coefficient": 0.019083260155906567,
+      "ridge_abs_coefficient": 0.019083260155906567,
+      "rf_impurity_importance": 0.027148395211351366,
+      "rf_permutation_importance_mean": -0.010094577275374361,
+      "rf_permutation_importance_std": 0.0006590460623137146,
+      "feature_mean": 0.50125,
+      "feature_std": 0.2886216425630198,
+      "scaler_mean": 0.5011008666666666,
+      "scaler_scale": 0.2881465537290279
+    },
+    {
+      "feature": "inferred_reviewer_count",
+      "mean_abs_shap": 0.00013374776672659148,
+      "ridge_coefficient": -0.0026749815557106263,
+      "ridge_abs_coefficient": 0.0026749815557106263,
+      "rf_impurity_importance": 0.0004521376388101891,
+      "rf_permutation_importance_mean": 0.0001470398645629034,
+      "rf_permutation_importance_std": 0.00010546298096687557,
+      "feature_mean": 7.8702,
+      "feature_std": 0.7391599445142003,
+      "scaler_mean": 7.871853333333333,
+      "scaler_scale": 0.7337154978751791
+    }
+  ],
+  "local_explanation_rows": 35,
+  "local_shap_rows": 18,
+  "counterfactual_summary": {
+    "popularity_pct": {
+      "mean_rank_shift": 0.0,
+      "median_rank_shift": 0.0,
+      "mean_score_delta": 0.0014893874091602875,
+      "share_improved": 0.06896551724137931,
+      "share_worsened": 0.07692307692307693
+    },
+    "price_pct": {
+      "mean_rank_shift": -0.007957559681697613,
+      "median_rank_shift": 0.0,
+      "mean_score_delta": -0.004553215880122095,
+      "share_improved": 0.042440318302387266,
+      "share_worsened": 0.050397877984084884
+    },
+    "quality_pct": {
+      "mean_rank_shift": -0.002652519893899204,
+      "median_rank_shift": 0.0,
+      "mean_score_delta": 0.002433883751487241,
+      "share_improved": 0.03713527851458886,
+      "share_worsened": 0.03713527851458886
+    },
+    "rating_pct": {
+      "mean_rank_shift": -0.015915119363395226,
+      "median_rank_shift": 0.0,
+      "mean_score_delta": 0.0031551919898120707,
+      "share_improved": 0.08222811671087533,
+      "share_worsened": 0.09814323607427056
+    }
+  },
+  "outputs": {
+    "global_importance_csv": "results\\xai\\global_importance.csv",
+    "local_top7_explanations_csv": "results\\xai\\local_top7_explanations.csv",
+    "local_top7_shap_values_csv": "results\\xai\\local_top7_shap_values.csv",
+    "sample_shap_values_csv": "results\\xai\\sample_shap_values.csv",
+    "counterfactual_rank_shifts_csv": "results\\xai\\counterfactual_rank_shifts.csv"
+  },
+  "interpretation_guardrail": "These are TreeExplainer SHAP explanations of a random-forest surrogate for final hybrid scores, combined with intrinsic RL-vs-TOPSIS branch contributions. They are not presented as causal explanations of user behavior."
+}
