@@ -4,5 +4,7 @@ title: "Hybrid RL-TOPSIS Research Package"
 authors:
   - family-names: "Canay"
     given-names: "O."
+  - family-names: "Ozkurt"
+    given-names: "C."
 date-released: 2026-05-09
 version: "hybrid-rl-topsis"
