@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and identify this as the Revision 1 evidence snapshot."
+type: software
+title: "Hybrid RL and entropy-weighted TOPSIS: Revision 1 evidence repository"
+version: "r1-evidence"
+authors:
+  - family-names: "Canay"
+    given-names: "Özkan"
+    orcid: "https://orcid.org/0000-0001-7539-6001"
+  - family-names: "Özkurt"
+    given-names: "Cem"
+    orcid: "https://orcid.org/0000-0002-1251-7715"
+repository-code: "https://github.com/canay/hybrid-rl-mcdm"
+preferred-citation:
+  type: article
+  title: "How can criterion-rich e-marketplaces recommend without CF? An explainable hybrid RL and entropy-weighted TOPSIS framework"
+  authors:
+    - family-names: "Canay"
+      given-names: "Özkan"
+      orcid: "https://orcid.org/0000-0001-7539-6001"
+    - family-names: "Özkurt"
+      given-names: "Cem"
+      orcid: "https://orcid.org/0000-0002-1251-7715"

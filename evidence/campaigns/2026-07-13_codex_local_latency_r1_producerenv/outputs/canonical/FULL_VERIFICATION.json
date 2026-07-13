@@ -1,0 +1,37 @@
+{
+  "campaign_id": "2026-07-13_codex_local_latency_r1_producerenv",
+  "checks_executed": 14026,
+  "gate": {
+    "accuracy_ok": true,
+    "canonical_condition_met": true,
+    "runtime_ok": true,
+    "status": "PASS_RETAIN_CACHED_PATH_CLAIM",
+    "threshold_ns": 1000000,
+    "verifier_pass_required": true
+  },
+  "independence": "Verifier does not import the runner or locked core; score fusion/statistics/gates are independently implemented.",
+  "input_hashes": {
+    "RUN_MANIFEST.json": "6882904f426795622f833256d143db111903913abb51e0e1cc539a3bdb89be68",
+    "canonical_main_catalogs.jsonl": "803eebfe09be8d62b5f446955f2106fe7ef8b220a979b68c9f9d71acb4827ecd",
+    "canonical_main_results.json": "48677825f4446e2df427a0940dc8c0947b99aef1373ca5dfb6933f35728ad861",
+    "canonical_overlay_FULL_VERIFICATION.json": "a3112da73a28e9c68f3148b0a8668cc834472c7d5c765870ad1fed25e09fcd97",
+    "canonical_overlay_RUN_MANIFEST.json": "ab29bb4782daf44c856f79ef8ad83559d4b59b637409476a43ed02dac8672ea7",
+    "canonical_overlay_verification_status.json": "2513c8922a38e5f1a413d081b607225a55a620d7ad1cf540db208c48373b811f",
+    "canonical_source_RUN_MANIFEST.json": "0428ecd9dc13f7241137d79428b47b94e03c9c41a2563978b25086adef1a2222",
+    "canonical_status.json": "6470b05e83827637e34983511359a9eda24d26d0977d7976eb517dfe156ec2f3",
+    "fixture_manifest.json": "91eb91d441c1867a7b9fadbfa87bb3a2853d747404b9a2970efec74947bb5f1c",
+    "locked_core.py": "46022b7348d7f0adcabeac8112009c53d82fa7669ef0b624a867c58794fc649f",
+    "verified_vectors.npz": "25193909df6ed588975a435138d181632af61cf507d97cc8687b646b427d08a3"
+  },
+  "mode": "canonical",
+  "output_hashes": {
+    "latency_results.json": "c1146e841ce675f85f934d9ad47a89b192b0542b97562ffc16ed3ae30555bda3",
+    "raw_durations_ns.npy": "e68a1ae427133f6ed62a589eb3021da5422af64944ce59401d9d46c7a6c3e053",
+    "timer_overhead_ns.npy": "566fa61af745f9ef967b11e1f73a93479fa0a4391ed60fcae54890eea075e13b"
+  },
+  "schema_version": "hre.latency_full_verification.v2",
+  "status": "completed_verified",
+  "verdict": "PASS",
+  "verified_at": "2026-07-13T04:42:59+03:00",
+  "verifier_sha256": "1c5db72e854224e99e216a88f0b849fa2d8db6f45d312be1dcde96abbae25360"
+}

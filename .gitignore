@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Raw or independently acquired data must never be committed here.
+data/raw/
+data/processed/
+safe_data/
+**/users.json
+**/items.csv
+
+# Manuscript, reviewer, state, runtime, and local build material are out of scope.
+MD/
+archive/
+render/
+tmp/
+logs/
+ECRA/
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz

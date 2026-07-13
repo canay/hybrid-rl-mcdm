@@ -1,0 +1,17 @@
+{
+  "campaign_id": "2026-07-13_codex_local_exact_xai_r1_producerenv",
+  "elapsed_seconds": 161.3954839706421,
+  "environment": {
+    "numpy": "1.26.0",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3"
+  },
+  "eta_seconds": 0.0,
+  "mode": "canonical",
+  "pid": 8724,
+  "profile_cells_total": 250,
+  "profile_cells_verified": 250,
+  "progress_percent": 100.0,
+  "run_manifest_sha256": "ff691ebcb1a85d35057a9baba72a360b0034c72e7139e41009b98d0575cd27e6",
+  "status": "completed_verified"
+}

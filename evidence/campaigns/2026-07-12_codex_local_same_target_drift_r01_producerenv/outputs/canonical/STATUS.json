@@ -1,0 +1,16 @@
+{
+  "blindness": "do_not_interpret_before_FULL_VERIFICATION_PASS",
+  "campaign_id": "2026-07-12_codex_local_same_target_drift_r01_producerenv",
+  "completed_catalogs": 50,
+  "full_verification_sha256": "acb62f386a362c0292e275e7f2ca657f3760016a58860aab206bf760eb7934b7",
+  "mode": "canonical",
+  "previous_status_sha256": "f862f697d28f54b90449dffaa5898c6b3945e57b900a0fd152c6c29e96b7f777",
+  "run_manifest_sha256": "21ef380e9ab68ca259d04abbf0ebe5c121e6280dbcbe50cb366211726c227800",
+  "schema_version": "same_target_drift.status.v1",
+  "scientific_metrics_exposed": false,
+  "sealed_records_sha256": "75ad97c9ca2fc3505085f5608f0a851cd207443854e56893fcf3e66a0995b041",
+  "status": "completed_verified",
+  "terminal_sha256": "809e98e033f67b96f2af9a9691a59b85c4ce8be75a00930d3f7abd56acfdf4b1",
+  "total_catalogs": 50,
+  "verifier_source_sha256": "ac49ce94d9e506daf77cdbcbe61c647ce18b3d585b16af42c193da78db997c41"
+}

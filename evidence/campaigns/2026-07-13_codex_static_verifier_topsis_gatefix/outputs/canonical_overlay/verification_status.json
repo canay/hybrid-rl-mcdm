@@ -1,0 +1,21 @@
+{
+  "campaign_id": "2026-07-13_codex_static_verifier_topsis_gatefix",
+  "catalogs_completed": 50,
+  "catalogs_total": 50,
+  "cells_completed": 5000,
+  "cells_total": 5000,
+  "elapsed_seconds": 1854.047000000006,
+  "estimated_remaining_seconds": 0.0,
+  "full_verification_path": "FULL_VERIFICATION.json",
+  "full_verification_sha256": "a3112da73a28e9c68f3148b0a8668cc834472c7d5c765870ad1fed25e09fcd97",
+  "mode": "canonical",
+  "pid": 11716,
+  "progress_percent": 100.0,
+  "python_unbuffered_required": true,
+  "runtime_logs_policy": "campaign-sibling runtime_logs/; wrapper-managed",
+  "schema_version": "same_target_bridge.verification_status.v1",
+  "scientific_values_exposed": false,
+  "source_campaign_id": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+  "status": "completed_verified",
+  "stderr_health": "external runtime log; inspect wrapper-managed stderr"
+}

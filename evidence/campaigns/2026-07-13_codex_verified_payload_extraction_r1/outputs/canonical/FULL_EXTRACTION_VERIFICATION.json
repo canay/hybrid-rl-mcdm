@@ -1,0 +1,67 @@
+{
+  "campaign_id": "2026-07-13_codex_verified_payload_extraction_r1",
+  "counts": {
+    "drift_rows_checked": 72,
+    "lambda_rows_checked": 108,
+    "latency_raw_calls_checked": 300000,
+    "static_rows_checked": 748,
+    "xai_run_rows_checked": 50
+  },
+  "gates": [
+    {
+      "gate_id": "G01_source_hash_and_terminal_binding",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G02_all_static_arms_anchors_contrasts",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G03_convergence_profile_and_exact_r0_diagnostics",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G04_complete_lambda_grid_not_for_tuning",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G05_all_drift_conditions_and_legacy_reproduction",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G06_unfiltered_latency_raw_recomputation",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G07_predeclared_exact_xai_run_level_recomputation",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G08_output_hash_chain_and_interpretation_boundaries",
+      "status": "PASS"
+    }
+  ],
+  "independence": "Standalone verifier; does not import extractor.py",
+  "model": "GPT-5 Codex",
+  "operation_id": "HRE_R1_VERIFIED_SCIENCE_EXTRACTION_20260713_CODEX_25",
+  "output_hashes_before_full": {
+    "SOURCE_HASH_MANIFEST.json": "b3562c272f5aae6c160799c61395c96f6b2d141278d56f9c9b7aaec9403aae33",
+    "VERIFIED_SCIENTIFIC_PAYLOAD.json": "7371d16817a507c10a3d962813e37a7ff1aa2f0cc481db9b4d254d9876698a2d",
+    "drift_all_conditions.csv": "c12aa63c4bb6e2f04412dc490402054047955d9d6b106b64c0eb344ba31cbed2",
+    "lambda_posthoc_diagnostic.csv": "3bcda3aa090d90ca5a45b761b29557c3cfbec0a4983321a01cc0d7b5846bd565",
+    "latency_summary.json": "6abaddebc84154aad426b4f2ac560457beb63ba28dad7fa0901459340fb90c00",
+    "static_all_arms.csv": "18db1ac7a2db623fe4198a369ee8c22f86fef9d44944c5af594ad40d18dc9b26",
+    "static_all_contrasts.csv": "42c574e7108bd7849ca8deeff545e4c59e0b9ab83f22b29905c8197a65dfaec2",
+    "static_anchor_diagnostics.csv": "c0ea39c6da03d1185f2116de13ea3d5c0fd65bbfebda135dde71436c6d696384",
+    "static_locked_anchors.csv": "34610fa8bfd34568e2341833b5c6629767524117dd1e49a4d0c01f390715ced6",
+    "xai_run_level.jsonl": "94043f96a18760ccf0f5c44854f60ca98c47e38798b63f8e2fe9e8b81260e20e",
+    "xai_summary.json": "f91d42eb737ed6f92eb948958fe152987dfffea2ede116c5d4ad3afc4d7e98ff"
+  },
+  "payload_sha256": "7371d16817a507c10a3d962813e37a7ff1aa2f0cc481db9b4d254d9876698a2d",
+  "run_manifest_sha256": "ffb1e3028050c11ed0cbb078e1dbc0ac912339a62cb97196e0e0f598e8a3bd67",
+  "schema_version": "hre.verified_science_extraction.full_verification.v1",
+  "status": "completed_verified",
+  "tool": "Codex",
+  "verdict": "PASS",
+  "verified_at": "2026-07-13T05:14:00+03:00"
+}

@@ -1,0 +1,262 @@
+{
+  "accuracy": {
+    "after_count": 250,
+    "all_exact": true,
+    "before_count": 250
+  },
+  "claim_boundary": "cached 400-item Q/TOPSIS static_hybrid_score plus full argsort top-7 only",
+  "config": {
+    "blocks": 20,
+    "bootstrap_replicates": 2000,
+    "calls_per_block": 5000,
+    "passes": 3,
+    "timer_overhead_samples": 50000,
+    "warmup": 10000
+  },
+  "environment": {
+    "hardware": {
+      "logical_cpu_count": 8,
+      "processor": "Intel64 Family 6 Model 158 Stepping 9, GenuineIntel",
+      "total_physical_memory_bytes": 17021575168,
+      "windows_processor_name": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz"
+    },
+    "libraries": {
+      "numpy": "1.26.0"
+    },
+    "numpy_runtime": {
+      "show_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"msvc\",\n      \"linker\": \"link\",\n      \"version\": \"19.29.30152\",\n      \"commands\": \"cl\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.0.2\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"msvc\",\n      \"linker\": \"link\",\n      \"version\": \"19.29.30152\",\n      \"commands\": \"cl\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"windows\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"windows\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"openblas64\",\n      \"found\": true,\n      \"version\": \"0.3.23.dev\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"<redacted-build-include-directory>\",\n      \"lib directory\": \"<redacted-build-library-directory>\",\n      \"openblas configuration\": \"USE_64BITINT=1 DYNAMIC_ARCH=1 DYNAMIC_OLDER= NO_CBLAS= NO_LAPACK= NO_LAPACKE= NO_AFFINITY=1 USE_OPENMP= SKYLAKEX MAX_THREADS=2\",\n      \"pc file directory\": \"<redacted-build-pc-file-directory>\"\n    },\n    \"lapack\": {\n      \"name\": \"openblas64\",\n      \"found\": true,\n      \"version\": \"0.3.23.dev\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"<redacted-build-include-directory>\",\n      \"lib directory\": \"<redacted-build-library-directory>\",\n      \"openblas configuration\": \"USE_64BITINT=1 DYNAMIC_ARCH=1 DYNAMIC_OLDER= NO_CBLAS= NO_LAPACK= NO_LAPACKE= NO_AFFINITY=1 USE_OPENMP= SKYLAKEX MAX_THREADS=2\",\n      \"pc file directory\": \"<redacted-build-pc-file-directory>\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"<redacted-python-executable>\",\n    \"version\": \"3.12\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"SSE\",\n      \"SSE2\",\n      \"SSE3\"\n    ],\n    \"found\": [\n      \"SSSE3\",\n      \"SSE41\",\n      \"POPCNT\",\n      \"SSE42\",\n      \"AVX\",\n      \"F16C\",\n      \"FMA3\",\n      \"AVX2\"\n    ],\n    \"not found\": [\n      \"AVX512F\",\n      \"AVX512CD\",\n      \"AVX512_SKX\",\n      \"AVX512_CLX\",\n      \"AVX512_CNL\",\n      \"AVX512_ICL\"\n    ]\n  }\n}\n",
+      "show_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '1.26.0',\n  'python': '3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:13:34) '\n            '[MSC v.1944 64 bit (AMD64)]',\n  'uname': uname_result(system='Windows', node='anonymous-review-host', release='11', version='10.0.26200', machine='AMD64')},\n {'simd_extensions': {'baseline': ['SSE', 'SSE2', 'SSE3'],\n                      'found': ['SSSE3',\n                                'SSE41',\n                                'POPCNT',\n                                'SSE42',\n                                'AVX',\n                                'F16C',\n                                'FMA3',\n                                'AVX2'],\n                      'not_found': ['AVX512F',\n                                    'AVX512CD',\n                                    'AVX512_SKX',\n                                    'AVX512_CLX',\n                                    'AVX512_CNL',\n                                    'AVX512_ICL']}}]\n"
+    },
+    "os": {
+      "machine": "AMD64",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "release": "11",
+      "version": "10.0.26200"
+    },
+    "power": {
+      "active_scheme": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+      "returncode": 0,
+      "source": "powercfg /GETACTIVESCHEME"
+    },
+    "power_post": {
+      "active_scheme": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+      "returncode": 0,
+      "source": "powercfg /GETACTIVESCHEME"
+    },
+    "python": {
+      "executable": "python",
+      "implementation": "CPython",
+      "version": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:13:34) [MSC v.1944 64 bit (AMD64)]",
+      "version_info": [
+        3,
+        12,
+        12
+      ]
+    },
+    "recorded_at": "2026-07-13T04:42:31+03:00",
+    "runtime_enforcement": {
+      "affinity_mask_after": "0x1",
+      "affinity_mask_before": "0xff",
+      "logical_processors_after": 1,
+      "platform": "windows",
+      "priority_class_after": 32,
+      "priority_class_before": 32,
+      "priority_name_after": "Normal",
+      "selected_core_index": 0,
+      "system_affinity_mask": "0xff"
+    },
+    "runtime_post": {
+      "affinity_mask": "0x1",
+      "logical_processors": 1,
+      "platform": "windows",
+      "priority_class": 32,
+      "priority_name": "Normal",
+      "selected_core_indices": [
+        0
+      ],
+      "system_affinity_mask": "0xff"
+    },
+    "runtime_pre": {
+      "affinity_mask": "0x1",
+      "logical_processors": 1,
+      "platform": "windows",
+      "priority_class": 32,
+      "priority_name": "Normal",
+      "selected_core_indices": [
+        0
+      ],
+      "system_affinity_mask": "0xff"
+    },
+    "thread_environment": {
+      "forced_before_numpy_import": {
+        "BLIS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "post_timing_values": {
+        "BLIS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "previous_values": {
+        "BLIS_NUM_THREADS": null,
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "VECLIB_MAXIMUM_THREADS": null
+      }
+    },
+    "threadpool_post": {
+      "all_reported_threads_one": null,
+      "available": false,
+      "pools": [],
+      "provider": "threadpoolctl",
+      "reason": "module unavailable in locked producer environment"
+    },
+    "threadpool_pre": {
+      "all_reported_threads_one": null,
+      "available": false,
+      "pools": [],
+      "provider": "threadpoolctl",
+      "reason": "module unavailable in locked producer environment"
+    },
+    "timer": {
+      "adjustable": false,
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "name": "perf_counter_ns",
+      "resolution_seconds": 1e-07
+    }
+  },
+  "pair_schedule": {
+    "calls_per_pair_per_block": 20,
+    "calls_per_pair_total": 1200,
+    "order": "run_index major, PROFILE_ORDER minor",
+    "pair_count": 250,
+    "warmup_calls_per_pair": 40
+  },
+  "passes_all_samples": [
+    {
+      "all_samples": {
+        "cv": 1.7355371143549307,
+        "max_ns": 18121900.0,
+        "mean_ns": 62179.723,
+        "median_ns": 52900.0,
+        "min_ns": 46100.0,
+        "n": 100000,
+        "p95_ns": 113300.0,
+        "p99_ns": 147700.0,
+        "std_ns": 107915.21702680891
+      },
+      "pass_index": 0
+    },
+    {
+      "all_samples": {
+        "cv": 1.8580525351780144,
+        "max_ns": 19676000.0,
+        "mean_ns": 64318.651,
+        "median_ns": 53900.0,
+        "min_ns": 46200.0,
+        "n": 100000,
+        "p95_ns": 117800.0,
+        "p99_ns": 151200.0,
+        "std_ns": 119507.43254977993
+      },
+      "pass_index": 1
+    },
+    {
+      "all_samples": {
+        "cv": 2.1275175960107124,
+        "max_ns": 26972900.0,
+        "mean_ns": 65576.705,
+        "median_ns": 53600.0,
+        "min_ns": 46100.0,
+        "n": 100000,
+        "p95_ns": 121000.0,
+        "p99_ns": 151200.99999999948,
+        "std_ns": 139515.59377590366
+      },
+      "pass_index": 2
+    }
+  ],
+  "raw_all_samples": {
+    "cv": 1.9213612238745752,
+    "max_ns": 26972900.0,
+    "mean_ns": 64025.026333333335,
+    "median_ns": 53500.0,
+    "min_ns": 46100.0,
+    "n": 300000,
+    "p95_ns": 117600.0,
+    "p99_ns": 150200.0,
+    "std_ns": 123015.20295441525
+  },
+  "raw_artifact": {
+    "dtype": "uint64",
+    "path": "raw_durations_ns.npy",
+    "sha256": "e68a1ae427133f6ed62a589eb3021da5422af64944ce59401d9d46c7a6c3e053",
+    "shape": [
+      3,
+      20,
+      5000
+    ]
+  },
+  "retention_gate": {
+    "accuracy_ok": true,
+    "canonical_condition_met": true,
+    "runtime_ok": true,
+    "status": "PASS_RETAIN_CACHED_PATH_CLAIM",
+    "threshold_ns": 1000000,
+    "verifier_pass_required": true
+  },
+  "schema_version": "hre.verified_latency_payload.v1",
+  "stable_all_samples_secondary": {
+    "cv": 1.9213612238745752,
+    "max_ns": 26972900.0,
+    "mean_ns": 64025.026333333335,
+    "median_ns": 53500.0,
+    "min_ns": 46100.0,
+    "n": 300000,
+    "p95_ns": 117600.0,
+    "p99_ns": 150200.0,
+    "std_ns": 123015.20295441525
+  },
+  "threshold_diagnostics": {
+    "all_stable_block_p99_strictly_below_threshold": true,
+    "equality_to_threshold_fails": true,
+    "every_pass_all_sample_p99_strictly_below_threshold": true,
+    "every_pass_stable_sample_p99_strictly_below_threshold": true,
+    "pooled_raw_p99_strictly_below_threshold": true,
+    "primary_condition_met": true,
+    "primary_gate_basis": "all raw timed calls; no stability filtering",
+    "stability_sufficient": true,
+    "stable_block_diagnostics_are_secondary": true,
+    "threshold_ns": 1000000
+  },
+  "timer_overhead": {
+    "cv": 1.180340158922956,
+    "max_ns": 18400.0,
+    "mean_ns": 152.152,
+    "measurement": "back-to-back perf_counter_ns calls",
+    "median_ns": 100.0,
+    "min_ns": 100.0,
+    "n": 50000,
+    "p95_ns": 200.0,
+    "p99_ns": 200.0,
+    "raw_artifact": {
+      "dtype": "uint64",
+      "path": "timer_overhead_ns.npy",
+      "sha256": "566fa61af745f9ef967b11e1f73a93479fa0a4391ed60fcae54890eea075e13b",
+      "shape": [
+        50000
+      ]
+    },
+    "std_ns": 179.5911158604456
+  }
+}

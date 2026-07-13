@@ -1,0 +1,89 @@
+{
+  "campaign_artifact_hashes": {
+    "PROTOCOL_LOCK.md": "da9e4f67cc33022f40b6b395e0530b8639754a17bbc51c13d836b2b265ac70e1",
+    "build_run_manifest.py": "c5074999b4a069b9265211c8468cca3fc49a00505f185c40b8a94113900f6a5a",
+    "src/xai_main.py": "31aed8c97bad9dc9d6f23b2b0e5c9dff4bf0524ed0355ade99e0ef2ccc7e9683",
+    "tests/test_verify_xai.py": "d8302dc2fec5e0c46e9f6acbd90bcd24fa65ea13d514b02aea285bbaddc2421a",
+    "tests/test_xai_contract.py": "1a562eba25e81eceb44e963edf5f0927d0f117cce161b420c33486cbc0120da0",
+    "verify_xai.py": "3fa740717200dce993c8bb242611d0ce74ade47cf8b15d340255ecb59813bd22"
+  },
+  "campaign_id": "2026-07-13_codex_local_exact_xai_r1_producerenv",
+  "counts": {
+    "catalogs": 50,
+    "items_per_cell": 400,
+    "numeric_values_checked": 1243150,
+    "profile_cells": 250,
+    "profiles_per_catalog": 5,
+    "reward_replay_episodes": 7500000,
+    "topsis_coalition_evaluations": 320000
+  },
+  "environment": {
+    "numpy": "1.26.0",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3"
+  },
+  "gates": [
+    {
+      "gate_id": "G01_verified_bridge_and_hash_chain",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G02_allowlist_extraction",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G03_same_rng_action_reward_q_replay",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G04_q_reward_component_efficiency",
+      "status": "PASS",
+      "tolerance": 1e-12
+    },
+    {
+      "gate_id": "G05_score_space_cq_affine_decomposition",
+      "status": "PASS",
+      "tolerance": 1e-12
+    },
+    {
+      "gate_id": "G06_exact_16_coalition_topsis_shapley",
+      "status": "PASS",
+      "tolerance": 1e-12
+    },
+    {
+      "gate_id": "G07_full_score_and_top7_rank_reconstruction",
+      "status": "PASS",
+      "tolerance": 1e-12
+    },
+    {
+      "gate_id": "G08_strict_schema_finite_and_containment",
+      "status": "PASS"
+    },
+    {
+      "gate_id": "G09_independent_verifier_code_path",
+      "runner_imported": false,
+      "status": "PASS"
+    }
+  ],
+  "maximum_reconstruction_abs_error": 6.661338147750939e-16,
+  "mode": "canonical",
+  "output_hashes": {
+    "status.json": "78a5b8386d47c7354f6ca121d3c30d019cd663248c91adab33ce8250b7fb1020",
+    "verification_status.json": "9b051087de8ce2b72fa8e0af5c3e233b463ff03447c1a33ea321808db8004501",
+    "xai_attributions.jsonl": "455a4d9e8bf534ff6cf25fbc474e826264e8f03878bbe447e8f68d02315010bd",
+    "xai_inputs.jsonl": "84f9812190750eeb983e02ab0c775002a1e86e708af495400e76a85a6c62dcdc",
+    "xai_results.json": "f1a19493c54a94e7c809efc3616a3311a87bb5b7379ac7940796145f879449cf"
+  },
+  "run_manifest_sha256": "ff691ebcb1a85d35057a9baba72a360b0034c72e7139e41009b98d0575cd27e6",
+  "schema_version": "exact_xai.full_verification.v1",
+  "source_core_sha256": "46022b7348d7f0adcabeac8112009c53d82fa7669ef0b624a867c58794fc649f",
+  "source_data_campaign_id": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+  "source_data_run_manifest_sha256": "0428ecd9dc13f7241137d79428b47b94e03c9c41a2563978b25086adef1a2222",
+  "source_evidence_campaign_id": "2026-07-13_codex_static_verifier_topsis_gatefix",
+  "source_evidence_full_verification_sha256": "a3112da73a28e9c68f3148b0a8668cc834472c7d5c765870ad1fed25e09fcd97",
+  "source_evidence_run_manifest_sha256": "ab29bb4782daf44c856f79ef8ad83559d4b59b637409476a43ed02dac8672ea7",
+  "status": "completed_verified",
+  "verdict": "PASS",
+  "verified_at_epoch_seconds": 1783907479.5126824,
+  "verifier_sha256": "3fa740717200dce993c8bb242611d0ce74ade47cf8b15d340255ecb59813bd22"
+}

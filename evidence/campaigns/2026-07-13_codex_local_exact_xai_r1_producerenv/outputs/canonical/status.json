@@ -1,0 +1,21 @@
+{
+  "campaign_id": "2026-07-13_codex_local_exact_xai_r1_producerenv",
+  "catalogs_completed": 50,
+  "catalogs_total": 50,
+  "elapsed_seconds": 179.51417756080627,
+  "environment": {
+    "numpy": "1.26.0",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3"
+  },
+  "eta_seconds": 0.0,
+  "mode": "canonical",
+  "pid": 33096,
+  "profile_cells_completed": 250,
+  "profile_cells_total": 250,
+  "progress_percent": 100.0,
+  "run_manifest_sha256": "ff691ebcb1a85d35057a9baba72a360b0034c72e7139e41009b98d0575cd27e6",
+  "status": "completed_unverified",
+  "terminal_path": "outputs/canonical/xai_results.json",
+  "terminal_sha256": "f1a19493c54a94e7c809efc3616a3311a87bb5b7379ac7940796145f879449cf"
+}

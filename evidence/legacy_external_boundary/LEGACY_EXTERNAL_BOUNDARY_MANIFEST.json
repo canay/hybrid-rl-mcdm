@@ -1,0 +1,70 @@
+{
+  "boundary": "These code/result pairs are legacy R1 external-boundary diagnostics. They are separate from the corrected target-blind primary evaluation and the current hash-bound verified payload extractor.",
+  "date_time": "2026-07-13 09:14 +03:00",
+  "entries": [
+    {
+      "boundary": "legacy R1 secondary diagnostic; not corrected primary and not current verified extractor output",
+      "code": {
+        "bytes": 15502,
+        "package_path": "legacy_external_boundary/code/mccauley_home_experiment.py",
+        "sha256": "5af4c7080b054b0e27cd3671efa920e9064eae468a0142beaffbf9a921fb2804",
+        "source_project_relative_path": "code/mccauley_home_experiment.py"
+      },
+      "id": "mccauley_home",
+      "result": {
+        "bytes": 290768,
+        "package_path": "legacy_external_boundary/results/mccauley_home_real_results.json",
+        "sha256": "9f04ebedb34be8b6811f6d52a48af3c30d6eaec13f0d659180c211b737efef6c",
+        "source_project_relative_path": "results/mccauley_home_real_results.json"
+      },
+      "role": "External McAuley Home diagnostic branch"
+    },
+    {
+      "boundary": "legacy R1 secondary diagnostic; not corrected primary and not current verified extractor output",
+      "code": {
+        "bytes": 13216,
+        "package_path": "legacy_external_boundary/code/benchmark_recommenders.py",
+        "sha256": "2afa343c4722e7c2cb23908061f3e69a31355844be1138887301b0c2fc0eab03",
+        "source_project_relative_path": "code/benchmark_recommenders.py"
+      },
+      "id": "classical_sparse_recommenders",
+      "result": {
+        "bytes": 42665,
+        "package_path": "legacy_external_boundary/results/recommender_benchmarks.json",
+        "sha256": "ca3e016f810dcff121d6089f11566c6a3560c9c10c42d852bdf892b32f31b249",
+        "source_project_relative_path": "results/recommender_benchmarks.json"
+      },
+      "role": "Classical sparse implicit-feedback baselines"
+    },
+    {
+      "boundary": "legacy R1 secondary diagnostic; not corrected primary and not current verified extractor output",
+      "code": {
+        "bytes": 19137,
+        "package_path": "legacy_external_boundary/code/deep_recommender_benchmarks.py",
+        "sha256": "2ca8d7ffac38af3cf8d90d999e09db1d32679c90032e7ef8e2c280e40d5e83ab",
+        "source_project_relative_path": "code/deep_recommender_benchmarks.py"
+      },
+      "id": "deep_sparse_recommenders",
+      "result": {
+        "bytes": 11232,
+        "package_path": "legacy_external_boundary/results/deep_recommender_benchmarks.json",
+        "sha256": "6ce9663fb51c0a8657e97bce65929bb57b813b12cbcfa2081d73cd699ff4ff4d",
+        "source_project_relative_path": "results/deep_recommender_benchmarks.json"
+      },
+      "role": "Deep/sequential sparse recommender baselines"
+    }
+  ],
+  "logs_included": false,
+  "model": "GPT-5 Codex",
+  "operation_id": "HRE_R1_ANON_SUPPLEMENT_PRIVACY_CLOSURE_20260713_CODEX_31",
+  "project_evidence_note": {
+    "bytes": 3333,
+    "package_path": "legacy_external_boundary/LEGACY_EXTERNAL_BOUNDARY_EVIDENCE_MANIFEST_2026-07-13.md",
+    "sha256": "987940e23ecada284ee62208f27d5833ceb02f5d491a423f1d5b98ff0ca60128",
+    "source_project_relative_path": "MD/05_experiments/LEGACY_EXTERNAL_BOUNDARY_EVIDENCE_MANIFEST_2026-07-13.md"
+  },
+  "raw_data_included": false,
+  "schema_version": "anonymous_supplement.legacy_external_boundary.v1",
+  "status": "privacy_scanned_secondary_evidence",
+  "tool": "Codex"
+}

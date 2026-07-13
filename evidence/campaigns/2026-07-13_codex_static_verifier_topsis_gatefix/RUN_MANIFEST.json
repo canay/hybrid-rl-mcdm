@@ -1,0 +1,67 @@
+{
+  "campaign_id": "2026-07-13_codex_static_verifier_topsis_gatefix",
+  "created_at": "2026-07-13T03:02:00+03:00",
+  "environment": {
+    "packages": {
+      "numpy": "1.26.0",
+      "pandas": "2.2.3",
+      "scipy": "1.16.3"
+    },
+    "python": "3.12.12"
+  },
+  "execution_policy": {
+    "allowed_modes": [
+      "smoke",
+      "canonical"
+    ],
+    "authorization_operation_id": "HRE_R1_STATIC_GATEFIX_LOCK_20260713_CODEX_15",
+    "canonical_authorized": true,
+    "lifecycle_status": "LOCKED"
+  },
+  "lock_files": [
+    "PROTOCOL_LOCK.md",
+    "RUN_MANIFEST.json",
+    "verify_overlay.py",
+    "tests/test_overlay_contract.py",
+    "tests/test_topsis_gatefix.py"
+  ],
+  "model": "GPT-5",
+  "operation_id": "HRE_R1_STATIC_GATEFIX_LOCK_20260713_CODEX_15",
+  "overlay_files": [
+    {
+      "bytes": 4516,
+      "path": "PROTOCOL_LOCK.md",
+      "sha256": "b547d7a8accc0eb562ca511c364cf5f2c51c14fb0299decd79f555f037ecb72c"
+    },
+    {
+      "bytes": 99913,
+      "path": "verify_overlay.py",
+      "sha256": "5b88dd3cf6bc2068cddca6cd046e3b4b377784075d237821cbc5a862f00acb23"
+    },
+    {
+      "bytes": 6587,
+      "path": "tests/test_overlay_contract.py",
+      "sha256": "c90ef1a768c7add843194526415ced9dcaae2c24180fc353ccf92a29a077171c"
+    },
+    {
+      "bytes": 5571,
+      "path": "tests/test_topsis_gatefix.py",
+      "sha256": "8d7c0a0dfebee41dcc3a3f5fad887e3190ce5e31c7e1e60d996dbc5b76005f21"
+    }
+  ],
+  "schema_version": "static_verifier_overlay.run_manifest.v1",
+  "source_campaign": {
+    "campaign_id": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+    "canonical_checkpoint_sha256": "803eebfe09be8d62b5f446955f2106fe7ef8b220a979b68c9f9d71acb4827ecd",
+    "canonical_failure_status_sha256": "43ed99ccd388949ab2364affa53f86c8eb1c7d3eb201f3f42f47c095eb5f58cd",
+    "canonical_failure_stderr_sha256": "992b2e6038f1209ee2b04218ce2c9bb4e195ca2447dfee439d25b0323ee369e5",
+    "canonical_runner_status_sha256": "6470b05e83827637e34983511359a9eda24d26d0977d7976eb517dfe156ec2f3",
+    "canonical_terminal_sha256": "48677825f4446e2df427a0940dc8c0947b99aef1373ca5dfb6933f35728ad861",
+    "relative_path_from_overlay": "../2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+    "run_manifest_sha256": "0428ecd9dc13f7241137d79428b47b94e03c9c41a2563978b25086adef1a2222",
+    "source_verifier_sha256": "d1caa594a08b5f5b1142e37cedede3a56bf50f9c40bf3640dc0267a5aa1ed1ed",
+    "verified_smoke_full_sha256": "d0579097e7fd1965292a32b10fdb4b2dd3dbd52e5eaa8794fc8eccdd60094cad"
+  },
+  "status": "LOCKED",
+  "tool": "Codex"
+}

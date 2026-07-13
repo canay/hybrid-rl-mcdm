@@ -1,0 +1,400 @@
+{
+  "arrays": {
+    "expected_top7": {
+      "dtype": "<i8",
+      "nbytes": 14000,
+      "shape": [
+        50,
+        5,
+        7
+      ],
+      "typed_sha256": "03383e89db82d74ee1177dfe52cfc2c3cc3bbc43549b72eb59cc56b66305c967"
+    },
+    "q_scores": {
+      "dtype": "<f8",
+      "nbytes": 800000,
+      "shape": [
+        50,
+        5,
+        400
+      ],
+      "typed_sha256": "8758616c67b26500859704518945694299abaead5965ffa159e7748a8f67a0d3"
+    },
+    "topsis": {
+      "dtype": "<f8",
+      "nbytes": 160000,
+      "shape": [
+        50,
+        400
+      ],
+      "typed_sha256": "f2e27c2862c6fe373b09be6a86a44453e48fc8fbd4a5efd2463fb89c42517a28"
+    }
+  },
+  "campaign_id": "2026-07-13_codex_local_latency_r1_producerenv",
+  "data_source": {
+    "arm_id": "candidate=full_catalog__bonus=0.00__reward=component_continuous_fix",
+    "campaign": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+    "datasets": [
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run00_seed17042.csv",
+        "run_index": 0,
+        "sha256": "d62f2515b879e01df77a7f6153f032c3f7a1662afb32bdab68946412e5947e61"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run01_seed17059.csv",
+        "run_index": 1,
+        "sha256": "7683515cada0f016b0028d03133d51504352d1eca7461a0baec71132f96d9f5d"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run02_seed17076.csv",
+        "run_index": 2,
+        "sha256": "af702be3576f11f335a0d27e3c612003ab2be749a9a40b8b685a5a384245a194"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run03_seed17093.csv",
+        "run_index": 3,
+        "sha256": "414a6b195f2891478fe1ab9b07fa09ccf0e15508494cbd02c4cf4c64c5203d60"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run04_seed17110.csv",
+        "run_index": 4,
+        "sha256": "a276281ed0081934cc63683d67f2a3b86d145560d8db810614d6f82063039e74"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run05_seed17127.csv",
+        "run_index": 5,
+        "sha256": "a150cf481192456461d41c5f7295eeb11d2484876d3758ef93518e4558ea8620"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run06_seed17144.csv",
+        "run_index": 6,
+        "sha256": "6bfb6239f5d4a801b14a365a85d4b117f04e92c7d4c13f77c1e0a349a0ea517c"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run07_seed17161.csv",
+        "run_index": 7,
+        "sha256": "dbae05864c65acaa2d530af32abc95a118dff2f0573741ea09435023457f4e74"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run08_seed17178.csv",
+        "run_index": 8,
+        "sha256": "9b94b68c314df8f07b694644b09bcfcc128f3f2018484bd2c08ce55b779c9945"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run09_seed17195.csv",
+        "run_index": 9,
+        "sha256": "475d2ceb2d56c4a76628b1644cb8e947f8b6d67d6ba5f83ff131d88db53a1c8d"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run10_seed17212.csv",
+        "run_index": 10,
+        "sha256": "8e513342c2c732f4c938da529c5845b41183323818090e5f991519bf55a8c24c"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run11_seed17229.csv",
+        "run_index": 11,
+        "sha256": "0d049e2cb52bd5b034adcf749505703da428dc413e73dce8e09a3ce5f377a81a"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run12_seed17246.csv",
+        "run_index": 12,
+        "sha256": "d33692ab994b38e3d0f99228d033b47aa4c0f9ac12d31b4494587d11cd252b2e"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run13_seed17263.csv",
+        "run_index": 13,
+        "sha256": "9d6c9bda31230973d3ad66264ec01af072b7e79707de166b09769902d8277f63"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run14_seed17280.csv",
+        "run_index": 14,
+        "sha256": "048472ceed52581197f56ccdec64cb719fd0626f5703e70be077a33bcff165f2"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run15_seed17297.csv",
+        "run_index": 15,
+        "sha256": "fde4bfc345985e5ab4dd6baaa858b2425457e41a5ca6de020d21d3ff1cad05ef"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run16_seed17314.csv",
+        "run_index": 16,
+        "sha256": "ba1600cb4e5c66a0630830db7443e57fc5fc172498aaf0b7e06af5635294a83f"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run17_seed17331.csv",
+        "run_index": 17,
+        "sha256": "c68be643cff7c202d8a944f0b2b2bf8b25e01679bfefac380ca341a2aab92080"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run18_seed17348.csv",
+        "run_index": 18,
+        "sha256": "215af2a7270ebfa676c9e38eaca9ea9f7bced4eb7ba005d72b29908dc050a157"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run19_seed17365.csv",
+        "run_index": 19,
+        "sha256": "9df8c8b79da74c80e62d7ba5a9671b3ee84a16f37666d49c83727f365cf5088f"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run20_seed17382.csv",
+        "run_index": 20,
+        "sha256": "f5d6b99fe2fee581868b238195f5ed73afa942bb2b5461e45e53fe12d86b49ef"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run21_seed17399.csv",
+        "run_index": 21,
+        "sha256": "76a6617ce84c31ab42bdcb1bafb485d88a2ed36c54067fd2b107a054c24955e3"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run22_seed17416.csv",
+        "run_index": 22,
+        "sha256": "43af16557878c7b5633ae7e35a7ab270d33e384236a0234166f4cd8a7a2d975b"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run23_seed17433.csv",
+        "run_index": 23,
+        "sha256": "33c4df9f7b5264eaf53dd1983f870bb0f235bf097c0aabeda82219f24b57b252"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run24_seed17450.csv",
+        "run_index": 24,
+        "sha256": "dc877ad12294759fea04da1b7ab32414bd6139d4e987fe9a78ad19f180d4898c"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run25_seed17467.csv",
+        "run_index": 25,
+        "sha256": "c732cc9b6928b3114dc5f7151e13500a8a15f867036b0fcfc2baf227359a21f6"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run26_seed17484.csv",
+        "run_index": 26,
+        "sha256": "32e1e2e74375b053a5ce221c25c1a361370bd2149663a160c0abd1873601e8e5"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run27_seed17501.csv",
+        "run_index": 27,
+        "sha256": "4caa58558cea7cfc3be5cf247b7c81e1578dbb1d199f8350c2530fa8f92bd38d"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run28_seed17518.csv",
+        "run_index": 28,
+        "sha256": "f07e3220b703dae44dd33705caa9dec02f4270e1f18a7b711c92b8d7d1aadc65"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run29_seed17535.csv",
+        "run_index": 29,
+        "sha256": "e46d649287401f56a6b630b0da43334fd86dcaf05a8211946898fe683085a17d"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run30_seed17552.csv",
+        "run_index": 30,
+        "sha256": "af1f20386cc390207ac4836883baa9c70ac80fdd3cfe5d2e5e09dabf892be7cd"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run31_seed17569.csv",
+        "run_index": 31,
+        "sha256": "83c9157e6e177dd22b273588dbf48765b8f9a1bfedaa664e53f240dcbf77e46b"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run32_seed17586.csv",
+        "run_index": 32,
+        "sha256": "0366ce22718f4c8c78346eacb8a36b54bd6f261462423d69f97e3a5517026aba"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run33_seed17603.csv",
+        "run_index": 33,
+        "sha256": "e3c0ed65b5ed988b65bcac79330fe2ea98d54d86e8914f19acaa658eb6534a67"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run34_seed17620.csv",
+        "run_index": 34,
+        "sha256": "16475946cb6bd2e8e3ce7c8ca803c3430c20c029b5a3a17f8bcb3a237dea2325"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run35_seed17637.csv",
+        "run_index": 35,
+        "sha256": "d15d0706fce4cba19717bd974d7ef53104f354ba7014ceb0e8b1930011b23063"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run36_seed17654.csv",
+        "run_index": 36,
+        "sha256": "ccad4e7a001ab055f96e83593c447e1897c851db0d66eabeb7f3ed52d84a5ff1"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run37_seed17671.csv",
+        "run_index": 37,
+        "sha256": "20b629baad0ec909787bb186dd5b662db7e609f1eb43db69682ba49dd47e6b49"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run38_seed17688.csv",
+        "run_index": 38,
+        "sha256": "f31d7e8c4c47663c8a81fc4ad5d22c61b2cf6912e1148eff3beabc409d819215"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run39_seed17705.csv",
+        "run_index": 39,
+        "sha256": "2966aba0dc7d6968fda2854efc2d63c064700cc57f3b4a66d9bde0986dca4a11"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run40_seed17722.csv",
+        "run_index": 40,
+        "sha256": "9e952bc9824e57e547698c27b6c81340cd61447eb04d6a86f302c277b3f4fdba"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run41_seed17739.csv",
+        "run_index": 41,
+        "sha256": "d138dbe150025dc3ef2a7690924136de54f327300939b8ea586d9dc5de19f0bd"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run42_seed17756.csv",
+        "run_index": 42,
+        "sha256": "f7c31bf9375ca95898eb6687b3b766bc1f8a5fa2e33679d8540c3592406ff948"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run43_seed17773.csv",
+        "run_index": 43,
+        "sha256": "1584a026da56919f68e083c19f52862f926674a70352fb974b0a5ccea1ac961e"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run44_seed17790.csv",
+        "run_index": 44,
+        "sha256": "c6586e027624cd5902e1943b17bce89c665a8e23ad1289ff71ca436f9f0753ce"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run45_seed17807.csv",
+        "run_index": 45,
+        "sha256": "2d59451cf245f6e639bddeea42ea740b290012e3432e063409e654d62d9618ca"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run46_seed17824.csv",
+        "run_index": 46,
+        "sha256": "9566b473ebfc0551d31fef117a02711ce61776dd5fa3638409f04af5a6950848"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run47_seed17841.csv",
+        "run_index": 47,
+        "sha256": "ebedf518ddaa0717e4ed9b6530360535207795c5f1b3d3004804bb5302fc6e4a"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run48_seed17858.csv",
+        "run_index": 48,
+        "sha256": "6be49a6fc8823b2ae16cad6cd7e375bac017ddf5c9f2af6268348176d8af9dfd"
+      },
+      {
+        "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\inputs\\data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run49_seed17875.csv",
+        "run_index": 49,
+        "sha256": "00af24a65e0b6154e0024894fe9b7edf491846a7703e6d9635b3f1b07b55c6f4"
+      }
+    ],
+    "kind": "canonical_scientific_payload",
+    "main_catalogs_path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\outputs\\canonical_main\\main_catalogs.jsonl",
+    "main_catalogs_sha256": "803eebfe09be8d62b5f446955f2106fe7ef8b220a979b68c9f9d71acb4827ecd",
+    "mode": "canonical",
+    "profile_order": [
+      "budget",
+      "quality_seeker",
+      "explorer",
+      "loyal",
+      "balanced"
+    ],
+    "run_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "run_manifest_path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\RUN_MANIFEST.json",
+    "run_manifest_sha256": "0428ecd9dc13f7241137d79428b47b94e03c9c41a2563978b25086adef1a2222",
+    "status_path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\outputs\\canonical_main\\status.json",
+    "status_sha256": "6470b05e83827637e34983511359a9eda24d26d0977d7976eb517dfe156ec2f3",
+    "terminal_path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\outputs\\canonical_main\\main_results.json",
+    "terminal_sha256": "48677825f4446e2df427a0940dc8c0947b99aef1373ca5dfb6933f35728ad861"
+  },
+  "excluded_from_fixture": [
+    "ground_truth",
+    "gt_rank",
+    "final_metrics",
+    "checkpoint_metrics",
+    "reward_diagnostics",
+    "visits"
+  ],
+  "fixture_file": "verified_vectors.npz",
+  "fixture_sha256": "25193909df6ed588975a435138d181632af61cf507d97cc8687b646b427d08a3",
+  "lambda_q": 0.5,
+  "locked_core": {
+    "path": "experiments\\2026-07-12_codex_local_same_target_bridge_r01_producerenv\\src\\original_hybrid_core.py",
+    "sha256": "46022b7348d7f0adcabeac8112009c53d82fa7669ef0b624a867c58794fc649f"
+  },
+  "material_passport": {
+    "allowed_use": "latency smoke and future separately authorized canonical timing",
+    "content_type": "canonical-verified cached score/ranking vectors",
+    "verification_status": "VERIFIED_BY_DISTINCT_OVERLAY"
+  },
+  "pair_schedule": {
+    "canonical_calls_per_pair_per_block": 20,
+    "canonical_calls_per_pair_total": 1200,
+    "order": "run_index major, PROFILE_ORDER minor",
+    "pair_count": 250
+  },
+  "schema_version": "hre.latency_fixture.v2",
+  "top_k": 7,
+  "verification_evidence": {
+    "campaign": "2026-07-13_codex_static_verifier_topsis_gatefix",
+    "full_path": "experiments\\2026-07-13_codex_static_verifier_topsis_gatefix\\outputs\\canonical_overlay\\FULL_VERIFICATION.json",
+    "full_sha256": "a3112da73a28e9c68f3148b0a8668cc834472c7d5c765870ad1fed25e09fcd97",
+    "kind": "distinct_independent_canonical_overlay",
+    "run_manifest_path": "experiments\\2026-07-13_codex_static_verifier_topsis_gatefix\\RUN_MANIFEST.json",
+    "run_manifest_sha256": "ab29bb4782daf44c856f79ef8ad83559d4b59b637409476a43ed02dac8672ea7",
+    "source_campaign": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+    "status": "completed_verified",
+    "status_path": "experiments\\2026-07-13_codex_static_verifier_topsis_gatefix\\outputs\\canonical_overlay\\verification_status.json",
+    "status_sha256": "2513c8922a38e5f1a413d081b607225a55a620d7ad1cf540db208c48373b811f",
+    "verdict": "PASS"
+  }
+}

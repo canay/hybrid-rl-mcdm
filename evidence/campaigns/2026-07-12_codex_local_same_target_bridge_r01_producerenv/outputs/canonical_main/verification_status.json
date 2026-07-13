@@ -1,0 +1,20 @@
+{
+  "campaign_id": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+  "catalogs_completed": 29,
+  "catalogs_total": 50,
+  "cells_completed": 2900,
+  "cells_total": 5000,
+  "elapsed_seconds": 1850.0149999999994,
+  "error_message": "Independent TOPSIS scores mismatch: run=29 profile=budget",
+  "error_type": "VerificationError",
+  "estimated_remaining_seconds": 1339.666034482758,
+  "mode": "canonical",
+  "pid": 31304,
+  "progress_percent": 58.0,
+  "python_unbuffered_required": true,
+  "runtime_logs_policy": "campaign-sibling runtime_logs/; wrapper-managed",
+  "schema_version": "same_target_bridge.verification_status.v1",
+  "scientific_values_exposed": false,
+  "status": "failed",
+  "stderr_health": "external runtime log; inspect wrapper-managed stderr"
+}

@@ -1,0 +1,15 @@
+{
+  "campaign_id": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+  "elapsed_seconds": 4398.429426193237,
+  "mode": "canonical",
+  "pid": 14832,
+  "progress_percent": 100.0,
+  "run_manifest_sha256": "0428ecd9dc13f7241137d79428b47b94e03c9c41a2563978b25086adef1a2222",
+  "runs_completed": 50,
+  "runs_total": 50,
+  "status": "completed_unverified",
+  "terminal_path": "outputs\\canonical_main\\main_results.json",
+  "terminal_sha256": "48677825f4446e2df427a0940dc8c0947b99aef1373ca5dfb6933f35728ad861",
+  "trajectories_completed": 5000,
+  "trajectories_total": 5000
+}

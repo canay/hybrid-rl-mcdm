@@ -1,0 +1,189 @@
+{
+  "date_time": "2026-07-13 09:14 +03:00",
+  "model": "GPT-5 Codex",
+  "operation_id": "HRE_R1_ANON_SUPPLEMENT_PRIVACY_CLOSURE_20260713_CODEX_31",
+  "policy": "Only operational identity/path strings and one deliberate negative-test path fixture were changed. Every scientific numeric JSON leaf was deep-compared against the pre-repair ZIP and required exact equality.",
+  "records": [
+    {
+      "canonical_original_sha256": "78a5b8386d47c7354f6ca121d3c30d019cd663248c91adab33ce8250b7fb1020",
+      "path": "experiments/2026-07-13_codex_local_exact_xai_r1_producerenv/outputs/canonical/status.json",
+      "privacy_safe_sha256": "b4a8684ca8d4e156027f90778ac254ce6a0b8afaf42c7f398bd152ff258c46ee",
+      "redacted_fields": [
+        {
+          "json_pointer": "/terminal_path",
+          "original_value_sha256": "7aab702f6009a5ace87a827ee14f863045b9311f339585027a6ed17f6ce03d60",
+          "reason": "local absolute output path -> package-relative path",
+          "replacement": "outputs/canonical/xai_results.json"
+        }
+      ],
+      "scientific_content_change": false
+    },
+    {
+      "canonical_original_sha256": "c1146e841ce675f85f934d9ad47a89b192b0542b97562ffc16ed3ae30555bda3",
+      "path": "experiments/2026-07-13_codex_local_latency_r1_producerenv/outputs/canonical/latency_results.json",
+      "privacy_safe_sha256": "e520fe753b892a26abbb76abe637df11c3c4f9d19cfdc0672b722e6fb5968dc8",
+      "redacted_fields": [
+        {
+          "json_pointer": "/environment/python/executable",
+          "original_value_sha256": "6b12fffae14530f1c2e26622d8496e89190675b367c1ee1fecf4f7bc19c714be",
+          "reason": "local interpreter path -> neutral executable label",
+          "replacement": "python"
+        },
+        {
+          "json_pointer": "/environment/numpy_runtime/show_runtime",
+          "original_value_sha256": "ef177da50ef3212379cde78f1e6c77d1dff251c5b836af9e0477142fca9545a0",
+          "reason": "host node token -> anonymous-review-host",
+          "replacement": "host token replaced in retained runtime report"
+        },
+        {
+          "json_pointer": "/environment/numpy_runtime/show_config",
+          "occurrence_records": [
+            {
+              "occurrences": 2,
+              "original_value_sha256": "c3042831a004cebbcb6804d5dc4f5c74336ed0534edab123e81a2c068a92031e",
+              "replacement": "<redacted-build-include-directory>"
+            },
+            {
+              "occurrences": 2,
+              "original_value_sha256": "49b679848b335dd37da8ec092bd6b7c8cca812b46a5ed25a0e0c84b28b133d8c",
+              "replacement": "<redacted-build-library-directory>"
+            },
+            {
+              "occurrences": 2,
+              "original_value_sha256": "cb5646d979dd77c68cccc85128b8947b683e617ad506b5cae6ebfd318decf416",
+              "replacement": "<redacted-build-pc-file-directory>"
+            },
+            {
+              "occurrences": 1,
+              "original_value_sha256": "77d5abffe0ab28b6c81b2e8ae1e139cafcd8fc49ddebc061a4cc76d0339b41fe",
+              "replacement": "<redacted-python-executable>"
+            }
+          ],
+          "original_package_value_sha256": "1019e6d10a6c4a207b5372302c0ef0f0851f19f56f47015bcd53eca49182f026",
+          "reason": "all drive-letter and MSYS-style Windows build paths -> neutral non-path sentinels",
+          "replacement": "path tokens replaced; non-path runtime metadata retained"
+        }
+      ],
+      "scientific_content_change": false
+    },
+    {
+      "canonical_original_sha256": "6abaddebc84154aad426b4f2ac560457beb63ba28dad7fa0901459340fb90c00",
+      "path": "experiments/2026-07-13_codex_verified_payload_extraction_r1/outputs/canonical/latency_summary.json",
+      "privacy_safe_sha256": "a3afb75ebf4a1a3eebd27a955ebceb1dbcf42fe43be5612bdbc8699fe907a0f3",
+      "redacted_fields": [
+        {
+          "json_pointer": "/environment/python/executable",
+          "original_value_sha256": "6b12fffae14530f1c2e26622d8496e89190675b367c1ee1fecf4f7bc19c714be",
+          "reason": "local interpreter path -> neutral executable label",
+          "replacement": "python"
+        },
+        {
+          "json_pointer": "/environment/numpy_runtime/show_runtime",
+          "original_value_sha256": "ef177da50ef3212379cde78f1e6c77d1dff251c5b836af9e0477142fca9545a0",
+          "reason": "host node token -> anonymous-review-host",
+          "replacement": "host token replaced in retained runtime report"
+        },
+        {
+          "json_pointer": "/environment/numpy_runtime/show_config",
+          "occurrence_records": [
+            {
+              "occurrences": 2,
+              "original_value_sha256": "c3042831a004cebbcb6804d5dc4f5c74336ed0534edab123e81a2c068a92031e",
+              "replacement": "<redacted-build-include-directory>"
+            },
+            {
+              "occurrences": 2,
+              "original_value_sha256": "49b679848b335dd37da8ec092bd6b7c8cca812b46a5ed25a0e0c84b28b133d8c",
+              "replacement": "<redacted-build-library-directory>"
+            },
+            {
+              "occurrences": 2,
+              "original_value_sha256": "cb5646d979dd77c68cccc85128b8947b683e617ad506b5cae6ebfd318decf416",
+              "replacement": "<redacted-build-pc-file-directory>"
+            },
+            {
+              "occurrences": 1,
+              "original_value_sha256": "77d5abffe0ab28b6c81b2e8ae1e139cafcd8fc49ddebc061a4cc76d0339b41fe",
+              "replacement": "<redacted-python-executable>"
+            }
+          ],
+          "original_package_value_sha256": "1019e6d10a6c4a207b5372302c0ef0f0851f19f56f47015bcd53eca49182f026",
+          "reason": "all drive-letter and MSYS-style Windows build paths -> neutral non-path sentinels",
+          "replacement": "path tokens replaced; non-path runtime metadata retained"
+        }
+      ],
+      "scientific_content_change": false
+    },
+    {
+      "canonical_original_sha256": "7371d16817a507c10a3d962813e37a7ff1aa2f0cc481db9b4d254d9876698a2d",
+      "path": "experiments/2026-07-13_codex_verified_payload_extraction_r1/outputs/canonical/VERIFIED_SCIENTIFIC_PAYLOAD.json",
+      "privacy_safe_sha256": "b60a171d3ce22e6ecf744ee2b4dbb593f65004d0606fa90323d12ffa9585759b",
+      "redacted_fields": [
+        {
+          "json_pointer": "/latency/environment/python/executable",
+          "original_value_sha256": "6b12fffae14530f1c2e26622d8496e89190675b367c1ee1fecf4f7bc19c714be",
+          "reason": "local interpreter path -> neutral executable label",
+          "replacement": "python"
+        },
+        {
+          "json_pointer": "/latency/environment/numpy_runtime/show_runtime",
+          "original_value_sha256": "ef177da50ef3212379cde78f1e6c77d1dff251c5b836af9e0477142fca9545a0",
+          "reason": "host node token -> anonymous-review-host",
+          "replacement": "host token replaced in retained runtime report"
+        },
+        {
+          "json_pointer": "/latency/environment/numpy_runtime/show_config",
+          "occurrence_records": [
+            {
+              "occurrences": 2,
+              "original_value_sha256": "c3042831a004cebbcb6804d5dc4f5c74336ed0534edab123e81a2c068a92031e",
+              "replacement": "<redacted-build-include-directory>"
+            },
+            {
+              "occurrences": 2,
+              "original_value_sha256": "49b679848b335dd37da8ec092bd6b7c8cca812b46a5ed25a0e0c84b28b133d8c",
+              "replacement": "<redacted-build-library-directory>"
+            },
+            {
+              "occurrences": 2,
+              "original_value_sha256": "cb5646d979dd77c68cccc85128b8947b683e617ad506b5cae6ebfd318decf416",
+              "replacement": "<redacted-build-pc-file-directory>"
+            },
+            {
+              "occurrences": 1,
+              "original_value_sha256": "77d5abffe0ab28b6c81b2e8ae1e139cafcd8fc49ddebc061a4cc76d0339b41fe",
+              "replacement": "<redacted-python-executable>"
+            }
+          ],
+          "original_package_value_sha256": "1019e6d10a6c4a207b5372302c0ef0f0851f19f56f47015bcd53eca49182f026",
+          "reason": "all drive-letter and MSYS-style Windows build paths -> neutral non-path sentinels",
+          "replacement": "path tokens replaced; non-path runtime metadata retained"
+        }
+      ],
+      "scientific_content_change": false
+    },
+    {
+      "canonical_original_sha256": "69ed9346d06b5ae4764a577acc345fd7cd29878fb4ccf7d0ab06552c744cc944",
+      "path": "experiments/2026-07-13_codex_local_latency_r1_producerenv/tests/test_verify_latency.py",
+      "privacy_safe_sha256": "766b1ea5cefbe09590766b2db5fcb37782fb5cde27345d07907b174d1615553c",
+      "record_type": "negative_test_source_fixture",
+      "redacted_fields": [
+        {
+          "original_value_sha256": "6007da0fc809d745c209f443b99175375f6cfc580baafb7d18b72374bc0a8df0",
+          "reason": "deliberate absolute-path test fixture -> neutral non-path mismatch sentinel",
+          "replacement": "intentional-nonpath-mismatch-sentinel",
+          "source_fixture": "python.executable negative mismatch value",
+          "test_semantics": "still differs from the expected producer executable and must be rejected"
+        }
+      ],
+      "scientific_content_change": false,
+      "source_location": "test_exact_producer_environment_negative_matrix[python.executable]"
+    }
+  ],
+  "redacted_operational_json_files": 4,
+  "redacted_source_fixture_files": 1,
+  "schema_version": "anonymous_supplement.redaction_manifest.v1",
+  "scientific_numeric_redactions": 0,
+  "status": "PASS",
+  "tool": "Codex"
+}

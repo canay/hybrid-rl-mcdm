@@ -1,0 +1,10 @@
+{
+  "checks_executed": 14026,
+  "mode": "canonical",
+  "schema_version": "hre.latency_verification_status.v1",
+  "status": "completed_verified",
+  "terminal_path": "FULL_VERIFICATION.json",
+  "terminal_sha256": "93534ba86f117dc1884b02b6c0e46cea936954a2ff1ba8935dcf85c098a0a5c3",
+  "verdict": "PASS",
+  "verified_at": "2026-07-13T04:42:59+03:00"
+}

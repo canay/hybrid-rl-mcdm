@@ -1,0 +1,87 @@
+{
+  "campaign_id": "2026-07-13_codex_local_exact_xai_r1_producerenv",
+  "canonical_authorized": true,
+  "environment": {
+    "numpy": "1.26.0",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3"
+  },
+  "execution_policy": {
+    "allowed_modes": [
+      "smoke",
+      "canonical"
+    ],
+    "authorization_operation_id": "HRE_R1_XAI_CANONICAL_LOCK_20260713_CODEX_19",
+    "canonical_authorized": true,
+    "lifecycle_status": "LOCKED"
+  },
+  "files": [
+    {
+      "path": "PROTOCOL_LOCK.md",
+      "sha256": "da9e4f67cc33022f40b6b395e0530b8639754a17bbc51c13d836b2b265ac70e1"
+    },
+    {
+      "path": "src/xai_main.py",
+      "sha256": "31aed8c97bad9dc9d6f23b2b0e5c9dff4bf0524ed0355ade99e0ef2ccc7e9683"
+    },
+    {
+      "path": "verify_xai.py",
+      "sha256": "3fa740717200dce993c8bb242611d0ce74ade47cf8b15d340255ecb59813bd22"
+    },
+    {
+      "path": "build_run_manifest.py",
+      "sha256": "c5074999b4a069b9265211c8468cca3fc49a00505f185c40b8a94113900f6a5a"
+    },
+    {
+      "path": "tests/test_xai_contract.py",
+      "sha256": "1a562eba25e81eceb44e963edf5f0927d0f117cce161b420c33486cbc0120da0"
+    },
+    {
+      "path": "tests/test_verify_xai.py",
+      "sha256": "d8302dc2fec5e0c46e9f6acbd90bcd24fa65ea13d514b02aea285bbaddc2421a"
+    }
+  ],
+  "full_verification_contract": {
+    "binds": [
+      "RUN_MANIFEST.json",
+      "PROTOCOL_LOCK.md",
+      "src/xai_main.py",
+      "verify_xai.py",
+      "build_run_manifest.py",
+      "tests/test_xai_contract.py",
+      "tests/test_verify_xai.py",
+      "producer_environment"
+    ],
+    "terminal_verdict": "completed_verified/PASS"
+  },
+  "operation_id": "HRE_R1_XAI_CANONICAL_LOCK_20260713_CODEX_19",
+  "schema_version": "exact_xai.run_manifest.v1",
+  "source_bindings": {
+    "canonical_shape": {
+      "catalogs": 50,
+      "profiles_per_catalog": 5
+    },
+    "data": {
+      "campaign_id": "2026-07-12_codex_local_same_target_bridge_r01_producerenv",
+      "canonical_output_hashes": {
+        "main_catalogs.jsonl": "803eebfe09be8d62b5f446955f2106fe7ef8b220a979b68c9f9d71acb4827ecd",
+        "main_results.json": "48677825f4446e2df427a0940dc8c0947b99aef1373ca5dfb6933f35728ad861",
+        "status.json": "6470b05e83827637e34983511359a9eda24d26d0977d7976eb517dfe156ec2f3"
+      },
+      "canonical_root": "outputs/canonical_main",
+      "core_sha256": "46022b7348d7f0adcabeac8112009c53d82fa7669ef0b624a867c58794fc649f",
+      "run_manifest_sha256": "0428ecd9dc13f7241137d79428b47b94e03c9c41a2563978b25086adef1a2222"
+    },
+    "evidence": {
+      "campaign_id": "2026-07-13_codex_static_verifier_topsis_gatefix",
+      "canonical_file_hashes": {
+        "FULL_VERIFICATION.json": "a3112da73a28e9c68f3148b0a8668cc834472c7d5c765870ad1fed25e09fcd97",
+        "verification_status.json": "2513c8922a38e5f1a413d081b607225a55a620d7ad1cf540db208c48373b811f"
+      },
+      "canonical_root": "outputs/canonical_overlay",
+      "run_manifest_sha256": "ab29bb4782daf44c856f79ef8ad83559d4b59b637409476a43ed02dac8672ea7"
+    },
+    "primary_arm_id": "candidate=full_catalog__bonus=0.00__reward=component_continuous_fix"
+  },
+  "status": "LOCKED"
+}

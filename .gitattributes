@@ -1,0 +1,20 @@
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+CITATION.cff text eol=lf
+LICENSE text eol=lf
+pytest.ini text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.npy binary
+*.npz binary
+
+# Preserve hash-bound campaign and privacy artifacts byte-for-byte. Several
+# canonical files intentionally use their producer's original CRLF encoding.
+evidence/campaigns/** -text
+evidence/legacy_external_boundary/** -text
+evidence/privacy/** -text

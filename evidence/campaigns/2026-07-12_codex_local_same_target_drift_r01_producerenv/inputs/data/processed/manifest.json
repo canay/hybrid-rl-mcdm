@@ -1,0 +1,327 @@
+{
+  "dataset_version": "hybrid_rl_topsis_amazon_india_enriched",
+  "source": "Amazon India sales/reviews product catalog CSV",
+  "raw_path": "data\\raw\\amazon_india.csv",
+  "raw_sha256": "4ba126c4ba8edd35e62e94ce1c853073d832de380184ab4f5f97d1e314882c77",
+  "raw_rows": 1465,
+  "unique_products_after_cleaning": 1348,
+  "n_products_per_run": 400,
+  "seed_base": 17042,
+  "run_seed_step": 17,
+  "n_runs": 50,
+  "privacy_publication_note": "Generated Hybrid RL-TOPSIS bootstrap catalogs exclude raw user_id, user_name, review_id, review_title, review_content, image links, and product links.",
+  "feature_derivation": {
+    "price": "numeric discounted_price parsed from INR text",
+    "actual_price": "numeric actual_price parsed from INR text",
+    "discount_pct": "numeric discount_percentage",
+    "rating": "Amazon product rating",
+    "rating_count": "Amazon rating_count parsed as integer-like numeric",
+    "quality": "0.70 normalized rating + 0.20 review-count percentile + 0.10 review-text-richness percentile",
+    "popularity": "log1p(rating_count) percentile scaled to 0-100",
+    "recency": "engagement proxy: 0.65 inferred reviewer breadth percentile + 0.35 discount percentile; source CSV has no timestamp",
+    "category": "coarse category mapped to Electronics, Computers, or HomeKitchen from Amazon category path",
+    "brand": "price-tier proxy required by the behavioral layer: budget/mid/premium derived from price tertiles"
+  },
+  "runs": [
+    {
+      "run_index": 0,
+      "seed": 17042,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run00_seed17042.csv",
+      "sha256": "d62f2515b879e01df77a7f6153f032c3f7a1662afb32bdab68946412e5947e61"
+    },
+    {
+      "run_index": 1,
+      "seed": 17059,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run01_seed17059.csv",
+      "sha256": "7683515cada0f016b0028d03133d51504352d1eca7461a0baec71132f96d9f5d"
+    },
+    {
+      "run_index": 2,
+      "seed": 17076,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run02_seed17076.csv",
+      "sha256": "af702be3576f11f335a0d27e3c612003ab2be749a9a40b8b685a5a384245a194"
+    },
+    {
+      "run_index": 3,
+      "seed": 17093,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run03_seed17093.csv",
+      "sha256": "414a6b195f2891478fe1ab9b07fa09ccf0e15508494cbd02c4cf4c64c5203d60"
+    },
+    {
+      "run_index": 4,
+      "seed": 17110,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run04_seed17110.csv",
+      "sha256": "a276281ed0081934cc63683d67f2a3b86d145560d8db810614d6f82063039e74"
+    },
+    {
+      "run_index": 5,
+      "seed": 17127,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run05_seed17127.csv",
+      "sha256": "a150cf481192456461d41c5f7295eeb11d2484876d3758ef93518e4558ea8620"
+    },
+    {
+      "run_index": 6,
+      "seed": 17144,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run06_seed17144.csv",
+      "sha256": "6bfb6239f5d4a801b14a365a85d4b117f04e92c7d4c13f77c1e0a349a0ea517c"
+    },
+    {
+      "run_index": 7,
+      "seed": 17161,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run07_seed17161.csv",
+      "sha256": "dbae05864c65acaa2d530af32abc95a118dff2f0573741ea09435023457f4e74"
+    },
+    {
+      "run_index": 8,
+      "seed": 17178,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run08_seed17178.csv",
+      "sha256": "9b94b68c314df8f07b694644b09bcfcc128f3f2018484bd2c08ce55b779c9945"
+    },
+    {
+      "run_index": 9,
+      "seed": 17195,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run09_seed17195.csv",
+      "sha256": "475d2ceb2d56c4a76628b1644cb8e947f8b6d67d6ba5f83ff131d88db53a1c8d"
+    },
+    {
+      "run_index": 10,
+      "seed": 17212,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run10_seed17212.csv",
+      "sha256": "8e513342c2c732f4c938da529c5845b41183323818090e5f991519bf55a8c24c"
+    },
+    {
+      "run_index": 11,
+      "seed": 17229,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run11_seed17229.csv",
+      "sha256": "0d049e2cb52bd5b034adcf749505703da428dc413e73dce8e09a3ce5f377a81a"
+    },
+    {
+      "run_index": 12,
+      "seed": 17246,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run12_seed17246.csv",
+      "sha256": "d33692ab994b38e3d0f99228d033b47aa4c0f9ac12d31b4494587d11cd252b2e"
+    },
+    {
+      "run_index": 13,
+      "seed": 17263,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run13_seed17263.csv",
+      "sha256": "9d6c9bda31230973d3ad66264ec01af072b7e79707de166b09769902d8277f63"
+    },
+    {
+      "run_index": 14,
+      "seed": 17280,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run14_seed17280.csv",
+      "sha256": "048472ceed52581197f56ccdec64cb719fd0626f5703e70be077a33bcff165f2"
+    },
+    {
+      "run_index": 15,
+      "seed": 17297,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run15_seed17297.csv",
+      "sha256": "fde4bfc345985e5ab4dd6baaa858b2425457e41a5ca6de020d21d3ff1cad05ef"
+    },
+    {
+      "run_index": 16,
+      "seed": 17314,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run16_seed17314.csv",
+      "sha256": "ba1600cb4e5c66a0630830db7443e57fc5fc172498aaf0b7e06af5635294a83f"
+    },
+    {
+      "run_index": 17,
+      "seed": 17331,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run17_seed17331.csv",
+      "sha256": "c68be643cff7c202d8a944f0b2b2bf8b25e01679bfefac380ca341a2aab92080"
+    },
+    {
+      "run_index": 18,
+      "seed": 17348,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run18_seed17348.csv",
+      "sha256": "215af2a7270ebfa676c9e38eaca9ea9f7bced4eb7ba005d72b29908dc050a157"
+    },
+    {
+      "run_index": 19,
+      "seed": 17365,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run19_seed17365.csv",
+      "sha256": "9df8c8b79da74c80e62d7ba5a9671b3ee84a16f37666d49c83727f365cf5088f"
+    },
+    {
+      "run_index": 20,
+      "seed": 17382,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run20_seed17382.csv",
+      "sha256": "f5d6b99fe2fee581868b238195f5ed73afa942bb2b5461e45e53fe12d86b49ef"
+    },
+    {
+      "run_index": 21,
+      "seed": 17399,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run21_seed17399.csv",
+      "sha256": "76a6617ce84c31ab42bdcb1bafb485d88a2ed36c54067fd2b107a054c24955e3"
+    },
+    {
+      "run_index": 22,
+      "seed": 17416,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run22_seed17416.csv",
+      "sha256": "43af16557878c7b5633ae7e35a7ab270d33e384236a0234166f4cd8a7a2d975b"
+    },
+    {
+      "run_index": 23,
+      "seed": 17433,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run23_seed17433.csv",
+      "sha256": "33c4df9f7b5264eaf53dd1983f870bb0f235bf097c0aabeda82219f24b57b252"
+    },
+    {
+      "run_index": 24,
+      "seed": 17450,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run24_seed17450.csv",
+      "sha256": "dc877ad12294759fea04da1b7ab32414bd6139d4e987fe9a78ad19f180d4898c"
+    },
+    {
+      "run_index": 25,
+      "seed": 17467,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run25_seed17467.csv",
+      "sha256": "c732cc9b6928b3114dc5f7151e13500a8a15f867036b0fcfc2baf227359a21f6"
+    },
+    {
+      "run_index": 26,
+      "seed": 17484,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run26_seed17484.csv",
+      "sha256": "32e1e2e74375b053a5ce221c25c1a361370bd2149663a160c0abd1873601e8e5"
+    },
+    {
+      "run_index": 27,
+      "seed": 17501,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run27_seed17501.csv",
+      "sha256": "4caa58558cea7cfc3be5cf247b7c81e1578dbb1d199f8350c2530fa8f92bd38d"
+    },
+    {
+      "run_index": 28,
+      "seed": 17518,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run28_seed17518.csv",
+      "sha256": "f07e3220b703dae44dd33705caa9dec02f4270e1f18a7b711c92b8d7d1aadc65"
+    },
+    {
+      "run_index": 29,
+      "seed": 17535,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run29_seed17535.csv",
+      "sha256": "e46d649287401f56a6b630b0da43334fd86dcaf05a8211946898fe683085a17d"
+    },
+    {
+      "run_index": 30,
+      "seed": 17552,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run30_seed17552.csv",
+      "sha256": "af1f20386cc390207ac4836883baa9c70ac80fdd3cfe5d2e5e09dabf892be7cd"
+    },
+    {
+      "run_index": 31,
+      "seed": 17569,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run31_seed17569.csv",
+      "sha256": "83c9157e6e177dd22b273588dbf48765b8f9a1bfedaa664e53f240dcbf77e46b"
+    },
+    {
+      "run_index": 32,
+      "seed": 17586,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run32_seed17586.csv",
+      "sha256": "0366ce22718f4c8c78346eacb8a36b54bd6f261462423d69f97e3a5517026aba"
+    },
+    {
+      "run_index": 33,
+      "seed": 17603,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run33_seed17603.csv",
+      "sha256": "e3c0ed65b5ed988b65bcac79330fe2ea98d54d86e8914f19acaa658eb6534a67"
+    },
+    {
+      "run_index": 34,
+      "seed": 17620,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run34_seed17620.csv",
+      "sha256": "16475946cb6bd2e8e3ce7c8ca803c3430c20c029b5a3a17f8bcb3a237dea2325"
+    },
+    {
+      "run_index": 35,
+      "seed": 17637,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run35_seed17637.csv",
+      "sha256": "d15d0706fce4cba19717bd974d7ef53104f354ba7014ceb0e8b1930011b23063"
+    },
+    {
+      "run_index": 36,
+      "seed": 17654,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run36_seed17654.csv",
+      "sha256": "ccad4e7a001ab055f96e83593c447e1897c851db0d66eabeb7f3ed52d84a5ff1"
+    },
+    {
+      "run_index": 37,
+      "seed": 17671,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run37_seed17671.csv",
+      "sha256": "20b629baad0ec909787bb186dd5b662db7e609f1eb43db69682ba49dd47e6b49"
+    },
+    {
+      "run_index": 38,
+      "seed": 17688,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run38_seed17688.csv",
+      "sha256": "f31d7e8c4c47663c8a81fc4ad5d22c61b2cf6912e1148eff3beabc409d819215"
+    },
+    {
+      "run_index": 39,
+      "seed": 17705,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run39_seed17705.csv",
+      "sha256": "2966aba0dc7d6968fda2854efc2d63c064700cc57f3b4a66d9bde0986dca4a11"
+    },
+    {
+      "run_index": 40,
+      "seed": 17722,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run40_seed17722.csv",
+      "sha256": "9e952bc9824e57e547698c27b6c81340cd61447eb04d6a86f302c277b3f4fdba"
+    },
+    {
+      "run_index": 41,
+      "seed": 17739,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run41_seed17739.csv",
+      "sha256": "d138dbe150025dc3ef2a7690924136de54f327300939b8ea586d9dc5de19f0bd"
+    },
+    {
+      "run_index": 42,
+      "seed": 17756,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run42_seed17756.csv",
+      "sha256": "f7c31bf9375ca95898eb6687b3b766bc1f8a5fa2e33679d8540c3592406ff948"
+    },
+    {
+      "run_index": 43,
+      "seed": 17773,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run43_seed17773.csv",
+      "sha256": "1584a026da56919f68e083c19f52862f926674a70352fb974b0a5ccea1ac961e"
+    },
+    {
+      "run_index": 44,
+      "seed": 17790,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run44_seed17790.csv",
+      "sha256": "c6586e027624cd5902e1943b17bce89c665a8e23ad1289ff71ca436f9f0753ce"
+    },
+    {
+      "run_index": 45,
+      "seed": 17807,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run45_seed17807.csv",
+      "sha256": "2d59451cf245f6e639bddeea42ea740b290012e3432e063409e654d62d9618ca"
+    },
+    {
+      "run_index": 46,
+      "seed": 17824,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run46_seed17824.csv",
+      "sha256": "9566b473ebfc0551d31fef117a02711ce61776dd5fa3638409f04af5a6950848"
+    },
+    {
+      "run_index": 47,
+      "seed": 17841,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run47_seed17841.csv",
+      "sha256": "ebedf518ddaa0717e4ed9b6530360535207795c5f1b3d3004804bb5302fc6e4a"
+    },
+    {
+      "run_index": 48,
+      "seed": 17858,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run48_seed17858.csv",
+      "sha256": "6be49a6fc8823b2ae16cad6cd7e375bac017ddf5c9f2af6268348176d8af9dfd"
+    },
+    {
+      "run_index": 49,
+      "seed": 17875,
+      "path": "data\\processed\\bootstrap_catalogs\\amazon_india_enriched_run49_seed17875.csv",
+      "sha256": "00af24a65e0b6154e0024894fe9b7edf491846a7703e6d9635b3f1b07b55c6f4"
+    }
+  ]
+}

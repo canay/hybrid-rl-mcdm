@@ -1,0 +1,73 @@
+{
+  "campaign_id": "2026-07-13_codex_local_latency_r1_producerenv",
+  "created_at": "2026-07-13T04:25:28+03:00",
+  "environment": {
+    "numpy_version": "1.26.0",
+    "python_executable": "experiments\\_runtime\\hre_submission_py312_numpy1260_pandas223\\Scripts\\python.exe",
+    "python_implementation": "CPython",
+    "python_version": "3.12.12",
+    "timer_implementation": "QueryPerformanceCounter()",
+    "timer_name": "perf_counter_ns"
+  },
+  "execution_policy": {
+    "allowed_modes": [
+      "smoke",
+      "canonical"
+    ],
+    "authorization_operation_id": "HRE_R1_LATENCY_CANONICAL_LOCK_20260713_CODEX_20",
+    "canonical_launch_authorized": true,
+    "canonical_timing_executed_at_lock": false
+  },
+  "lock_files": {
+    "fixture_builder": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\src\\prepare_verified_fixture.py",
+      "sha256": "644516d87e9367a8d0db8f362461441a641aa2ec50a9df64f8a06eb450d588ea"
+    },
+    "fixture_manifest": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\inputs\\fixture_manifest.json",
+      "sha256": "91eb91d441c1867a7b9fadbfa87bb3a2853d747404b9a2970efec74947bb5f1c"
+    },
+    "fixture_vectors": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\inputs\\verified_vectors.npz",
+      "sha256": "25193909df6ed588975a435138d181632af61cf507d97cc8687b646b427d08a3"
+    },
+    "lock_script": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\src\\lock_campaign.py",
+      "sha256": "625308032cf70df5f11c25722b84e2b8b960fd8c95b4f7d5325f59170b986abf"
+    },
+    "protocol": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\PROTOCOL_LOCK.md",
+      "sha256": "593a588d76c819b96177348d8883108c3fda39f8d4fa91204e0c9202a1ed3e23"
+    },
+    "runner": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\src\\latency_benchmark.py",
+      "sha256": "e782561f3758c7cbaf40edeff98a0e4a504ae08250f43b174aa4c02b445bd180"
+    },
+    "test_latency_contract": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\tests\\test_latency_contract.py",
+      "sha256": "b7d35c62217b13c4308eda5309d99c2f6483d1d8077f34580b840ea76b1af92e"
+    },
+    "test_verify_latency": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\tests\\test_verify_latency.py",
+      "sha256": "69ed9346d06b5ae4764a577acc345fd7cd29878fb4ccf7d0ab06552c744cc944"
+    },
+    "verifier": {
+      "path": "experiments\\2026-07-13_codex_local_latency_r1_producerenv\\verify_latency.py",
+      "sha256": "1c5db72e854224e99e216a88f0b849fa2d8db6f45d312be1dcde96abbae25360"
+    }
+  },
+  "model": "GPT-5 Codex",
+  "operation_id": "HRE_R1_LATENCY_CANONICAL_LOCK_20260713_CODEX_20",
+  "schema_version": "hre.latency.run_manifest.v1",
+  "source_bindings": {
+    "canonical_main_catalogs_sha256": "803eebfe09be8d62b5f446955f2106fe7ef8b220a979b68c9f9d71acb4827ecd",
+    "canonical_status_sha256": "6470b05e83827637e34983511359a9eda24d26d0977d7976eb517dfe156ec2f3",
+    "canonical_terminal_sha256": "48677825f4446e2df427a0940dc8c0947b99aef1373ca5dfb6933f35728ad861",
+    "overlay_full_sha256": "a3112da73a28e9c68f3148b0a8668cc834472c7d5c765870ad1fed25e09fcd97",
+    "overlay_run_manifest_sha256": "ab29bb4782daf44c856f79ef8ad83559d4b59b637409476a43ed02dac8672ea7",
+    "overlay_status_sha256": "2513c8922a38e5f1a413d081b607225a55a620d7ad1cf540db208c48373b811f",
+    "source_run_manifest_sha256": "0428ecd9dc13f7241137d79428b47b94e03c9c41a2563978b25086adef1a2222"
+  },
+  "status": "LOCKED",
+  "tool": "Codex"
+}

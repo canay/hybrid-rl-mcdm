@@ -1,0 +1,15 @@
+{
+  "campaign_id": "2026-07-12_codex_local_same_target_drift_r01_producerenv",
+  "completed_profile_arm_replays": 1600,
+  "console_contract": "progress_only; run with python -u; redirect logs outside outputs",
+  "elapsed_seconds": 1296.7578268051147,
+  "eta_seconds": 0.0,
+  "final_runner_status_sha256": "c3168815e4b22dcdc116aa32f481770051506b9e8e9b05617a3a603bbd7e5fba",
+  "full_verification_sha256": "acb62f386a362c0292e275e7f2ca657f3760016a58860aab206bf760eb7934b7",
+  "percent": 100.0,
+  "schema_version": "same_target_drift.verification_progress.v1",
+  "scientific_metrics_exposed": false,
+  "status": "completed_verified",
+  "terminal_sha256": "809e98e033f67b96f2af9a9691a59b85c4ce8be75a00930d3f7abd56acfdf4b1",
+  "total_profile_arm_replays": 1600
+}
